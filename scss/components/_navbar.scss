@@ -1,0 +1,136 @@
+.nav {
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem;
+	background-color: $bg-primary;
+	overflow: hidden;
+
+	&__link-list-container {
+		transform: translateX(0);
+		transition: transform 0.4s ease-in-out;
+	}
+
+	&__link-list {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+
+		&-opener {
+			display: none;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			transition: transform 0.4s ease;
+
+			& img {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+
+			&:hover {
+				transform: rotate(3deg);
+			}
+		}
+
+		&-closer {
+			display: none;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			position: fixed;
+			top: 1.5rem;
+			right: 1.5rem;
+			transition: transform 0.4s ease;
+
+			& img {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+
+			&:hover {
+				transform: rotate(-3deg);
+			}
+		}
+	}
+
+	&__logo {
+		font-size: $fsize-3;
+	}
+
+	&__link,
+	&__link:link,
+	&__link:visited,
+	&__link:active {
+		color: $white;
+		text-decoration: none;
+	}
+
+	&__btn,
+	&__btn:link,
+	&__btn:visited,
+	&__btn:active {
+		color: $white;
+		text-decoration: none;
+		border: 1px solid $white;
+		padding: 0.5rem 1rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.nav {
+		&__link-list-container {
+			box-sizing: border-box;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $bg-secondary;
+			transform: translateX(-100%);
+			z-index: 1000;
+		}
+
+		&__link-list {
+			width: 100%;
+			height: 100%;
+			flex-direction: column;
+			justify-content: start;
+			overflow-y: scroll;
+
+			& .nav__link,
+			& .nav__btn {
+				font-size: $fsize-3;
+			}
+
+			& li:first-child {
+				margin-top: 3rem;
+			}
+
+			& li:last-child {
+				margin-bottom: 3rem;
+			}
+
+			&-opener,
+			&-closer {
+				display: block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.nav {
+		&__link-list {
+			& .nav__link,
+			& .nav__btn {
+				font-size: $fsize-4;
+			}
+		}
+	}
+}
