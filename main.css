@@ -1,3 +1,18 @@
+@font-face {
+  font-family: Futura;
+  src: url("./fonts/Futura Std Book.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Futura;
+  font-weight: 900;
+  src: url("./fonts/Futura Std Heavy.ttf");
+}
+@font-face {
+  font-family: Futura;
+  font-weight: 300;
+  src: url("./fonts/Futura Thin.ttf");
+}
 html,
 body,
 div,
@@ -103,6 +118,8 @@ section {
 
 body {
   line-height: 1;
+  font-family: Futura, Lato, Helvetica, sans-serif;
+  background-color: #2c3333;
 }
 
 ol,
@@ -126,6 +143,42 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.heading-1 {
+  font-weight: 900;
+  font-size: 75px;
+}
+
+.heading-2 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.heading-3 {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.text-base {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.text-primary {
+  color: #0e8388;
+}
+
+.text-secondary {
+  color: #2e4f4f;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-white {
+  color: #cbe4de;
 }
 
 /*# sourceMappingURL=main.css.map */

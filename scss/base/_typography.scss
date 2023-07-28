@@ -1,0 +1,36 @@
+.heading-1 {
+	font-weight: 900;
+	font-size: $fsize-1;
+}
+
+.heading-2 {
+	font-weight: 700;
+	font-size: $fsize-2;
+}
+
+.heading-3 {
+	font-weight: 700;
+	font-size: $fsize-3;
+}
+
+.text-base {
+	font-weight: 500;
+	font-size: $fsize-base;
+}
+
+// Colors
+.text-primary {
+	color: $primary;
+}
+
+.text-secondary {
+	color: $secondary;
+}
+
+.text-black {
+	color: $black;
+}
+
+.text-white {
+	color: $white;
+}
