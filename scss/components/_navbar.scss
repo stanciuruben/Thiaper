@@ -1,6 +1,7 @@
 .nav {
 	width: 100%;
 	overflow: hidden;
+	z-index: 999;
 
 	&-fixed {
 		position: fixed;
@@ -239,6 +240,20 @@
 				padding: 0.75rem 1rem;
 				text-align: center;
 				box-sizing: border-box;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.nav {
+		&-fixed {
+			left: calc(50% - 960px);
+
+			& .nav-collections__list {
+				position: fixed;
+				max-width: 1920px;
+				left: calc(50% - 960px);
 			}
 		}
 	}
