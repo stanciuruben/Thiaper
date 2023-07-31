@@ -1,17 +1,17 @@
 @font-face {
-	font-family: Futura;
-	src: url('./fonts/Futura Std Book.ttf');
-	font-weight: 500;
-}
-
-@font-face {
-	font-family: Futura;
+	font-family: 'Futura';
 	font-weight: 900;
-	src: url('./fonts/Futura Std Heavy.ttf');
+	src: url('fonts/futura-std-heavy.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: Futura;
+	font-family: 'Futura';
+	font-weight: 500;
+	src: url('fonts/futura-std-book.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Futura';
 	font-weight: 300;
-	src: url('./fonts/Futura Thin.ttf');
+	src: url('fonts/futura-thin.ttf') format('truetype');
 }

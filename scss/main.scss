@@ -1,6 +1,10 @@
 @import 'base/variables';
 @import 'base/font-faces';
 @import 'base/reset';
-@import 'base/typography';
 
+@import 'utilities/base';
+@import 'utilities/flex';
+@import 'utilities/typography';
+
+@import 'components/swiper';
 @import 'components/navbar';
