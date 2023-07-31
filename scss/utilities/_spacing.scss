@@ -1,0 +1,11 @@
+.section {
+	margin-top: 7rem;
+	margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 900px) {
+	.section {
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+	}
+}

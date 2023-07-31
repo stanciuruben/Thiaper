@@ -1,6 +1,12 @@
 // CONTAINERS
 .container {
+	width: 100%;
 	max-width: 1280px;
+}
+
+.container-hd {
+	width: 100%;
+	max-width: 1920px;
 }
 // MARGINS
 .mx-auto {

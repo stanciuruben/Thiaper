@@ -1,0 +1,94 @@
+.btn {
+	display: inline-block;
+	font-family: inherit;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	border-radius: 0.25rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+	&--primary {
+		position: relative;
+		border: 2px solid $white;
+		color: $black;
+		background-color: $white;
+		z-index: 1;
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			transition: width 0.3s ease;
+			background-color: $primary;
+			z-index: -1;
+		}
+
+		&:hover,
+		&:active {
+			color: $white;
+
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+
+	&--secondary {
+		position: relative;
+		border: 2px solid $white;
+		color: $white;
+		background-color: rgba(0, 0, 0, 0.2);
+		z-index: 1;
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			transition: width 0.3s ease;
+			background-color: $secondary;
+			z-index: -1;
+		}
+
+		&:hover,
+		&:active {
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+
+	&--large {
+		padding: 0.75rem 1.5rem;
+		font-weight: 700;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.btn {
+		padding: 0.25rem 0.5rem;
+
+		&--large {
+			padding: 0.5rem 1rem;
+		}
+	}
+}

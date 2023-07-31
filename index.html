@@ -10,706 +10,740 @@
 		<title>Thiaper</title>
 	</head>
 	<body>
-		<nav class="nav nav-fixed">
-			<div class="nav-main">
-				<a href="#" class="nav__logo">Company Logo</a>
-				<button
-					type="button"
-					class="nav__link-list-opener"
-					aria-controls="nav__link-list-container"
-					aria-expanded="false"
-					aria-label="Open mobile navigation"
-				>
-					<img
-						src="img/icons/hamburger-white.svg"
-						alt="Hamburger icon"
-					/>
-				</button>
-				<div
-					id="nav__link-list-container"
-					class="nav__link-list-container"
-				>
+		<main class="container-hd mx-auto">
+			<nav class="nav nav-fixed container-hd mx-auto">
+				<div class="nav-main">
+					<a href="#" class="nav__logo">Company Logo</a>
 					<button
 						type="button"
-						class="nav__link-list-closer"
+						class="nav__link-list-opener"
 						aria-controls="nav__link-list-container"
 						aria-expanded="false"
-						aria-label="Close mobile navigation"
+						aria-label="Open mobile navigation"
 					>
-						<img src="img/icons/x-white.svg" alt="X icon" />
+						<img
+							src="img/icons/hamburger-white.svg"
+							alt="Hamburger icon"
+						/>
 					</button>
 					<div
-						id="nav__link-list"
-						class="nav__link-list scrollbar-hide"
+						id="nav__link-list-container"
+						class="nav__link-list-container"
 					>
-						<a href="#" class="nav__link">
-							<span class="flex gap-half"
-								><span class="nav__link__icon">
-									<img
-										src="img/icons/shopping-bag-white.svg"
-										alt=""
-									/> </span
-								><span>Cart</span>
-							</span>
-						</a>
-						<a href="#" class="nav__link"
-							><span class="flex gap-half"
-								><span class="nav__link__icon">
-									<img
-										src="img/icons/heart-icon-white.svg"
-										alt=""
-									/> </span
-								><span>Wishlist</span></span
-							></a
+						<button
+							type="button"
+							class="nav__link-list-closer"
+							aria-controls="nav__link-list-container"
+							aria-expanded="false"
+							aria-label="Close mobile navigation"
 						>
-						<a href="#" class="nav__link"
-							><span class="flex gap-half"
-								><span class="nav__link__icon">
-									<img
-										src="img/icons/discount-icon-white.svg"
-										alt=""
-									/> </span
-								><span>Coupons</span></span
-							></a
+							<img src="img/icons/x-white.svg" alt="X icon" />
+						</button>
+						<div
+							id="nav__link-list"
+							class="nav__link-list scrollbar-hide"
 						>
-						<a href="#" class="nav__btn">Login</a>
-						<h5 class="nav__link-list__title">Collections</h5>
+							<a href="#" class="nav__link">
+								<span class="flex gap-half"
+									><span class="nav__link__icon">
+										<img
+											src="img/icons/shopping-bag-white.svg"
+											alt=""
+										/> </span
+									><span>Cart</span>
+								</span>
+							</a>
+							<a href="#" class="nav__link"
+								><span class="flex gap-half"
+									><span class="nav__link__icon">
+										<img
+											src="img/icons/heart-icon-white.svg"
+											alt=""
+										/> </span
+									><span>Wishlist</span></span
+								></a
+							>
+							<a href="#" class="nav__link"
+								><span class="flex gap-half"
+									><span class="nav__link__icon">
+										<img
+											src="img/icons/discount-icon-white.svg"
+											alt=""
+										/> </span
+									><span>Coupons</span></span
+								></a
+							>
+							<a href="#" class="nav__btn">Login</a>
+							<h5 class="nav__link-list__title">Collections</h5>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="nav-collections">
-				<ul id="nav-collections__links" class="nav-collections__links">
-					<li>
-						<a href="#" class="nav-collections__link"> Men </a>
-					</li>
-					<li>
-						<a href="#" class="nav-collections__link"> Women </a>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="nav-collections__link"
-							aria-controls="nav-collections__list-1"
-							aria-expanded="false"
-						>
-							Clothes
-						</a>
-						<div
-							id="nav-collections__list-1"
-							class="nav-collections__list"
-						>
-							<hgroup class="container mx-auto">
-								<h5 class="heading-3 mb-1half">Categories</h5>
-							</hgroup>
-							<div class="container flex gap-1half mx-auto">
-								<div class="nav-collections__list__showcase">
-									<img
-										class="nav-collections__list__showcase__img"
-										src="img/placeholder/summer-outfit.jpg"
-										alt=""
-									/>
-									<a
-										href="#"
-										class="nav-collections__list__showcase__link"
+				<div class="nav-collections">
+					<ul
+						id="nav-collections__links"
+						class="nav-collections__links"
+					>
+						<li>
+							<a href="#" class="nav-collections__link"> Men </a>
+						</li>
+						<li>
+							<a href="#" class="nav-collections__link">
+								Women
+							</a>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="nav-collections__link"
+								aria-controls="nav-collections__list-1"
+								aria-expanded="false"
+							>
+								Clothes
+							</a>
+							<div
+								id="nav-collections__list-1"
+								class="nav-collections__list"
+							>
+								<hgroup class="container mx-auto">
+									<h5 class="heading-3 mb-1half">
+										Categories
+									</h5>
+								</hgroup>
+								<div class="container flex gap-1half mx-auto">
+									<div
+										class="nav-collections__list__showcase"
 									>
-										Shop Now
-									</a>
+										<img
+											class="nav-collections__list__showcase__img"
+											src="img/placeholder/summer-outfit.jpg"
+											alt=""
+										/>
+										<a
+											href="#"
+											class="nav-collections__list__showcase__link"
+										>
+											Shop Now
+										</a>
+									</div>
+									<dl class="nav-collections__list__sublist">
+										<dt>Casual</dt>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+									</dl>
+									<dl class="nav-collections__list__sublist">
+										<dt>Sport</dt>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+									</dl>
 								</div>
-								<dl class="nav-collections__list__sublist">
-									<dt>Casual</dt>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-								</dl>
-								<dl class="nav-collections__list__sublist">
-									<dt>Sport</dt>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-								</dl>
-							</div>
-							<div class="container mx-auto relative">
-								<h5 class="heading-3 my-1half">Brands</h5>
-								<div class="relative h-2half">
-									<div class="swiper">
-										<div
-											class="swiper-wrapper nav-collections__brand-list"
-										>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Puma</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Nike</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Adidas</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>New Balance</a
-												>
+								<div class="container mx-auto relative">
+									<h5 class="heading-3 my-1half">Brands</h5>
+									<div class="relative h-2half">
+										<div class="swiper">
+											<div
+												class="swiper-wrapper nav-collections__brand-list"
+											>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Puma</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Nike</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Adidas</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>New Balance</a
+													>
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="nav-collections__link"
-							aria-controls="nav-collections__list-2"
-							aria-expanded="false"
-						>
-							Shoes
-						</a>
-						<div
-							id="nav-collections__list-2"
-							class="nav-collections__list"
-						>
-							<hgroup class="container mx-auto">
-								<h5 class="heading-3 mb-1half">Categories</h5>
-							</hgroup>
-							<div class="container flex gap-1half mx-auto">
-								<dl class="nav-collections__list__sublist">
-									<dt>Sneakers</dt>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-								</dl>
-								<dl class="nav-collections__list__sublist">
-									<dt>Business shoes</dt>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-								</dl>
-								<div class="nav-collections__list__showcase">
-									<img
-										class="nav-collections__list__showcase__img"
-										src="img/placeholder/golden-boots.jpg"
-										alt=""
-									/>
-									<a
-										href="#"
-										class="nav-collections__list__showcase__link"
+						</li>
+						<li>
+							<a
+								href="#"
+								class="nav-collections__link"
+								aria-controls="nav-collections__list-2"
+								aria-expanded="false"
+							>
+								Shoes
+							</a>
+							<div
+								id="nav-collections__list-2"
+								class="nav-collections__list"
+							>
+								<hgroup class="container mx-auto">
+									<h5 class="heading-3 mb-1half">
+										Categories
+									</h5>
+								</hgroup>
+								<div class="container flex gap-1half mx-auto">
+									<dl class="nav-collections__list__sublist">
+										<dt>Sneakers</dt>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+									</dl>
+									<dl class="nav-collections__list__sublist">
+										<dt>Business shoes</dt>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+									</dl>
+									<div
+										class="nav-collections__list__showcase"
 									>
-										Shop Now
-									</a>
-								</div>
-							</div>
-							<div class="container mx-auto relative">
-								<h5 class="heading-3 my-1half">Brands</h5>
-								<div class="relative h-2half">
-									<div class="swiper">
-										<div
-											class="swiper-wrapper nav-collections__brand-list"
+										<img
+											class="nav-collections__list__showcase__img"
+											src="img/placeholder/golden-boots.jpg"
+											alt=""
+										/>
+										<a
+											href="#"
+											class="nav-collections__list__showcase__link"
 										>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Puma</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Nike</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Adidas</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>New Balance</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Dsquared</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Tom Ford</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Puma</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Nike</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Adidas</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>New Balance</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Dsquared</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Tom Ford</a
-												>
+											Shop Now
+										</a>
+									</div>
+								</div>
+								<div class="container mx-auto relative">
+									<h5 class="heading-3 my-1half">Brands</h5>
+									<div class="relative h-2half">
+										<div class="swiper">
+											<div
+												class="swiper-wrapper nav-collections__brand-list"
+											>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Puma</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Nike</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Adidas</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>New Balance</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Dsquared</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Tom Ford</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Puma</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Nike</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Adidas</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>New Balance</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Dsquared</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Tom Ford</a
+													>
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="nav-collections__link"
-							aria-controls="nav-collections__list-3"
-							aria-expanded="false"
-						>
-							Accessories
-						</a>
-						<div
-							id="nav-collections__list-3"
-							class="nav-collections__list"
-						>
-							<div class="container flex gap-1half mx-auto">
-								<div class="nav-collections__list__showcase">
-									<img
-										class="nav-collections__list__showcase__img"
-										src="img/placeholder/accessories.jpg"
-										alt=""
-									/>
-									<a
-										href="#"
-										class="nav-collections__list__showcase__link"
+						</li>
+						<li>
+							<a
+								href="#"
+								class="nav-collections__link"
+								aria-controls="nav-collections__list-3"
+								aria-expanded="false"
+							>
+								Accessories
+							</a>
+							<div
+								id="nav-collections__list-3"
+								class="nav-collections__list"
+							>
+								<div class="container flex gap-1half mx-auto">
+									<div
+										class="nav-collections__list__showcase"
 									>
-										Shop Now
-									</a>
+										<img
+											class="nav-collections__list__showcase__img"
+											src="img/placeholder/accessories.jpg"
+											alt=""
+										/>
+										<a
+											href="#"
+											class="nav-collections__list__showcase__link"
+										>
+											Shop Now
+										</a>
+									</div>
+									<dl class="nav-collections__list__sublist">
+										<dt>Watches</dt>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+									</dl>
+									<dl class="nav-collections__list__sublist">
+										<dt>Jewellery</dt>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+									</dl>
+									<dl class="nav-collections__list__sublist">
+										<dt>Belts</dt>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="#"
+												class="nav-collections__list__sublist__link"
+												>Link</a
+											>
+										</dd>
+									</dl>
 								</div>
-								<dl class="nav-collections__list__sublist">
-									<dt>Watches</dt>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-								</dl>
-								<dl class="nav-collections__list__sublist">
-									<dt>Jewellery</dt>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-								</dl>
-								<dl class="nav-collections__list__sublist">
-									<dt>Belts</dt>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-								</dl>
-							</div>
-							<div class="container mx-auto relative">
-								<h5 class="heading-3 my-1half">Brands</h5>
-								<div class="relative h-2half">
-									<div class="swiper">
-										<div
-											class="swiper-wrapper nav-collections__brand-list"
-										>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Puma</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Nike</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Adidas</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>New Balance</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Dsquared</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Tom Ford</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Puma</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Nike</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Adidas</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>New Balance</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Dsquared</a
-												>
-											</div>
-											<div class="swiper-slide">
-												<a
-													class="nav-collections__brand-list__link"
-													href="#"
-													>Tom Ford</a
-												>
+								<div class="container mx-auto relative">
+									<h5 class="heading-3 my-1half">Brands</h5>
+									<div class="relative h-2half">
+										<div class="swiper">
+											<div
+												class="swiper-wrapper nav-collections__brand-list"
+											>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Puma</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Nike</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Adidas</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>New Balance</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Dsquared</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Tom Ford</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Puma</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Nike</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Adidas</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>New Balance</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Dsquared</a
+													>
+												</div>
+												<div class="swiper-slide">
+													<a
+														class="nav-collections__brand-list__link"
+														href="#"
+														>Tom Ford</a
+													>
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</nav>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<section class="hero section">
+				<div class="hero__img">
+					<img src="img/placeholder/women.jpg" alt="" />
+				</div>
+				<div class="hero__content">
+					<h1 class="hero__content__title">Summer is finnaly here</h1>
+					<a class="btn btn--primary btn--large mt-1" href="#">
+						New Deals For Him
+					</a>
+					<a class="btn btn--secondary btn--large mt-1" href="#">
+						New Deals For Her
+					</a>
+				</div>
+				<div class="hero__line" aria-hidden="true"></div>
+			</section>
+		</main>
 	</body>
 
 	<script src="js/components/navbar.js"></script>
+	<script src="js/animations.js"></script>
 </html>
