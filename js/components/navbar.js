@@ -133,9 +133,21 @@ function displayCollectionLinksInMobileMenu() {
 }
 
 function removeCollectionLinksFromMobileMenu() {
-	var insertedLinks = document.getElementsByClassName('nav__link--inserted');
-	for (var i = 0; i < insertedLinks.length; i++) {
-		insertedLinks[i].remove();
+	for (var i = 0; i < collectionLinksContainers.length; i++) {
+		var currentNav =
+			collectionLinksContainers[i].parentElement.parentElement;
+		var currentNavLinkList =
+			currentNav.getElementsByClassName('nav__link-list')[0];
+		var insertedLinks = currentNavLinkList.getElementsByClassName(
+			'nav__link--inserted'
+		).length;
+		var firstLength = currentNavLinkList.children.length;
+		while (
+			currentNavLinkList.children.length >
+			firstLength - insertedLinks
+		) {
+			currentNavLinkList.removeChild(currentNavLinkList.lastChild);
+		}
 	}
 	isCollectionLinksInMobileMenu = false;
 }
