@@ -1,0 +1,35 @@
+.email-sub {
+	padding: 7rem 1rem;
+	text-align: center;
+	background-color: $bg-primary--light;
+
+	&__form {
+		margin: 3rem 0;
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		justify-content: center;
+
+		&__input {
+			padding: 1.1rem;
+			border-radius: 0.375rem;
+			width: 50%;
+			color: $black;
+			font-weight: 700;
+			border: none;
+		}
+	}
+
+	&__text {
+		margin: 1rem 0;
+		color: $white;
+
+		& a,
+		& a:visited,
+		& a:link,
+		& a:active {
+			text-decoration: none;
+			color: $primary;
+		}
+	}
+}

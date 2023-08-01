@@ -1236,5 +1236,33 @@ table {
     object-position: center center;
   }
 }
+.email-sub {
+  padding: 7rem 1rem;
+  text-align: center;
+  background-color: #2b2b2b;
+}
+.email-sub__form {
+  margin: 3rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.email-sub__form__input {
+  padding: 1.1rem;
+  border-radius: 0.375rem;
+  width: 50%;
+  color: #000000;
+  font-weight: 700;
+  border: none;
+}
+.email-sub__text {
+  margin: 1rem 0;
+  color: #cbe4de;
+}
+.email-sub__text a, .email-sub__text a:visited, .email-sub__text a:link, .email-sub__text a:active {
+  text-decoration: none;
+  color: #0e8388;
+}
 
 /*# sourceMappingURL=main.css.map */
