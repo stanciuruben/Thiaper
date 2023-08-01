@@ -36,6 +36,15 @@ heroTL
 		}
 	);
 
+ScrollTrigger.create({
+	trigger: '.hero',
+	start: 'top 60%',
+	id: 'hero-scroll-trigger',
+	end: 'bottom bottom',
+	animation: heroTL,
+	toggleActions: 'play none none forward'
+});
+
 var twoColumnsTL = gsap.timeline({ paused: true });
 
 twoColumnsTL
@@ -84,7 +93,7 @@ twoColumnsTL
 			duration: 1,
 			ease: 'strong.inOut'
 		},
-		'>-0.5'
+		'>-1'
 	);
 
 ScrollTrigger.create({
@@ -96,6 +105,6 @@ ScrollTrigger.create({
 	toggleActions: 'play none none forward'
 });
 
-window.addEventListener('load', function () {
-	heroTL.play();
-});
+// window.addEventListener('load', function () {
+// 	heroTL.play();
+// });
