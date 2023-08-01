@@ -1,0 +1,139 @@
+.two-columns {
+	position: relative;
+	width: 100%;
+	height: 40rem;
+
+	&__left {
+		width: 40rem;
+		height: 30rem;
+		position: absolute;
+		top: 0;
+		left: 2rem;
+		background-color: $black;
+		box-shadow: 0 0 0 2rem $black, 0 0 0 4rem $secondary;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			opacity: 0.5;
+		}
+
+		&__content {
+			position: absolute;
+			left: 0;
+			bottom: 1rem;
+			text-transform: uppercase;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			padding: 0 1rem;
+			width: 100%;
+			overflow: hidden;
+
+			& .btn {
+				display: block;
+			}
+		}
+	}
+
+	&__right {
+		z-index: 1;
+		width: 40rem;
+		height: 30rem;
+		position: absolute;
+		right: 2rem;
+		bottom: 0;
+		background-color: $black;
+		box-shadow: 0 0 0 2rem $black, 0 0 0 4rem $primary;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			opacity: 0.5;
+		}
+
+		&__content {
+			position: absolute;
+			left: 0rem;
+			bottom: 1rem;
+			text-transform: uppercase;
+			padding: 0 1rem;
+			width: 100%;
+			overflow: hidden;
+
+			& .btn {
+				display: inline-block;
+				margin-top: 1rem;
+			}
+		}
+	}
+
+	&__decoration {
+		display: block;
+		position: absolute;
+		top: 2rem;
+		left: 25%;
+		height: calc(100% - 4rem);
+		width: 50%;
+		border: 1rem dashed $black;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.two-columns {
+		&__left,
+		&__right {
+			width: 32rem;
+		}
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.two-columns {
+		height: 50rem;
+
+		&__left {
+			height: 20rem;
+			width: 70%;
+			left: 0;
+		}
+
+		&__right {
+			height: 20rem;
+			margin-top: 8rem;
+			width: 70%;
+		}
+
+		&__decoration {
+			left: 10%;
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.two-columns {
+		height: 40rem;
+
+		&__left {
+			width: calc(100% - 4rem);
+			height: 15rem;
+			left: 0;
+		}
+
+		&__right {
+			right: 0;
+			height: 15rem;
+			width: calc(100% - 4rem);
+		}
+
+		&__decoration {
+			display: none;
+		}
+	}
+}

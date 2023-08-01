@@ -47,12 +47,6 @@
 		bottom: 20%;
 		right: 3rem;
 		overflow: hidden;
-
-		&__title {
-			font-size: $fsize-1;
-			color: $white;
-			font-weight: 900;
-		}
 	}
 }
 
@@ -73,12 +67,6 @@
 		&__img {
 			img {
 				width: 900px;
-			}
-		}
-
-		&__content {
-			&__title {
-				font-size: $fsize-2;
 			}
 		}
 	}

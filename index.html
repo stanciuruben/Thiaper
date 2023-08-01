@@ -6,11 +6,12 @@
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="main.css" />
 		<script src="js/lib/gsap.min.js"></script>
+		<script src="js/lib/ScrollTrigger.min.js"></script>
 		<script src="js/lib/swiper-element-bundle.min.js"></script>
 		<title>Thiaper</title>
 	</head>
 	<body>
-		<main class="container-hd mx-auto">
+		<main class="container-hd mx-auto overflow-x-hidden">
 			<nav class="nav nav-fixed container-hd mx-auto">
 				<div class="nav-main">
 					<a href="#" class="nav__logo">Company Logo</a>
@@ -219,7 +220,7 @@
 								<div class="container mx-auto relative">
 									<h5 class="heading-3 my-1half">Brands</h5>
 									<div class="relative h-2half">
-										<div class="swiper">
+										<div class="swiper" id="swiper-1">
 											<div
 												class="swiper-wrapper nav-collections__brand-list"
 											>
@@ -253,9 +254,14 @@
 												</div>
 											</div>
 										</div>
-
-										<div class="swiper-button-prev"></div>
-										<div class="swiper-button-next"></div>
+										<div
+											id="swiper-button-prev-1"
+											class="swiper-button-prev nav-collections__brand-list__controller"
+										></div>
+										<div
+											id="swiper-button-next-1"
+											class="swiper-button-next nav-collections__brand-list__controller"
+										></div>
 									</div>
 								</div>
 							</div>
@@ -388,7 +394,7 @@
 								<div class="container mx-auto relative">
 									<h5 class="heading-3 my-1half">Brands</h5>
 									<div class="relative h-2half">
-										<div class="swiper">
+										<div class="swiper" id="swiper-2">
 											<div
 												class="swiper-wrapper nav-collections__brand-list"
 											>
@@ -478,9 +484,14 @@
 												</div>
 											</div>
 										</div>
-
-										<div class="swiper-button-prev"></div>
-										<div class="swiper-button-next"></div>
+										<div
+											id="swiper-button-prev-2"
+											class="swiper-button-prev nav-collections__brand-list__controller"
+										></div>
+										<div
+											id="swiper-button-next-2"
+											class="swiper-button-next nav-collections__brand-list__controller"
+										></div>
 									</div>
 								</div>
 							</div>
@@ -625,7 +636,7 @@
 								<div class="container mx-auto relative">
 									<h5 class="heading-3 my-1half">Brands</h5>
 									<div class="relative h-2half">
-										<div class="swiper">
+										<div class="swiper" id="swiper-3">
 											<div
 												class="swiper-wrapper nav-collections__brand-list"
 											>
@@ -716,8 +727,14 @@
 											</div>
 										</div>
 
-										<div class="swiper-button-prev"></div>
-										<div class="swiper-button-next"></div>
+										<div
+											id="swiper-button-prev-3"
+											class="swiper-button-prev nav-collections__brand-list__controller"
+										></div>
+										<div
+											id="swiper-button-next-3"
+											class="swiper-button-next nav-collections__brand-list__controller"
+										></div>
 									</div>
 								</div>
 							</div>
@@ -731,7 +748,9 @@
 					<img src="img/placeholder/women.jpg" alt="" />
 				</div>
 				<div class="hero__content">
-					<h1 class="hero__content__title">Summer is finnaly here</h1>
+					<h1 class="heading-1 text-white hero__content__title">
+						Summer is finnaly here
+					</h1>
 					<a class="btn btn--primary btn--large mt-1" href="#">
 						New Deals For Him
 					</a>
@@ -740,6 +759,28 @@
 					</a>
 				</div>
 				<div class="hero__line" aria-hidden="true"></div>
+			</section>
+
+			<section class="two-columns section">
+				<div class="two-columns__decoration" aria-hidden="true"></div>
+				<div class="two-columns__left">
+					<img src="img/placeholder/swimsuit.jpg" alt="" />
+					<div class="two-columns__left__content">
+						<h2 class="heading-2 text-white">
+							Be the star on the beach!
+						</h2>
+						<a href="#" class="btn btn--secondary">Shop Now</a>
+					</div>
+				</div>
+				<div class="two-columns__right">
+					<img src="img/placeholder/skincare.jpg" alt="" />
+					<div class="two-columns__right__content">
+						<h2 class="heading-2 text-white">
+							Get ready for the sun!
+						</h2>
+						<a href="#" class="btn btn--primary">Shop Now</a>
+					</div>
+				</div>
 			</section>
 		</main>
 	</body>
