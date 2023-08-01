@@ -166,29 +166,33 @@ if (window.innerWidth < 900) {
 
 // Brands
 var slidesPerView = 4;
-var swipers = new Swiper('.swiper', {
+new Swiper('#swiper-1', {
 	slidesPerView: slidesPerView,
 	speed: 400,
 	spaceBetween: 16,
 	grabCursor: true,
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev'
+		nextEl: '#swiper-button-next-1',
+		prevEl: '#swiper-button-prev-1'
 	}
 });
-
-for (var i = 0; i < swipers.length; i++) {
-	if (swipers[i].wrapperEl.children.length <= slidesPerView) {
-		swipers[i].el.style.width = '100%';
-		var prevBtn =
-			swipers[i].el.parentElement.getElementsByClassName(
-				'swiper-button-prev'
-			)[0];
-		var nextBtn =
-			swipers[i].el.parentElement.getElementsByClassName(
-				'swiper-button-next'
-			)[0];
-		prevBtn.remove();
-		nextBtn.remove();
+new Swiper('#swiper-2', {
+	slidesPerView: slidesPerView,
+	speed: 400,
+	spaceBetween: 16,
+	grabCursor: true,
+	navigation: {
+		nextEl: '#swiper-button-next-2',
+		prevEl: '#swiper-button-prev-2'
 	}
-}
+});
+new Swiper('#swiper-3', {
+	slidesPerView: slidesPerView,
+	speed: 400,
+	spaceBetween: 16,
+	grabCursor: true,
+	navigation: {
+		nextEl: '#swiper-button-next-3',
+		prevEl: '#swiper-button-prev-3'
+	}
+});
