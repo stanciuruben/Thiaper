@@ -1,5 +1,4 @@
 var heroTL = gsap.timeline({ paused: true });
-
 heroTL
 	.fromTo(
 		'.hero__line',
@@ -45,8 +44,53 @@ ScrollTrigger.create({
 	toggleActions: 'play none none forward'
 });
 
-var twoColumnsTL = gsap.timeline({ paused: true });
+var heroFlatTL = gsap.timeline({ paused: true });
+heroFlatTL
+	.fromTo(
+		'.hero--flat__line',
+		{
+			width: '0'
+		},
+		{
+			width: '100%',
+			duration: 1,
+			ease: 'strong.inOut'
+		}
+	)
+	.fromTo(
+		'.hero--flat__img',
+		{
+			width: '0'
+		},
+		{
+			width: '100%',
+			duration: 1,
+			ease: 'strong.inOut'
+		},
+		'>-1'
+	)
+	.fromTo(
+		'.hero--flat__content',
+		{
+			height: '0'
+		},
+		{
+			height: 'auto',
+			duration: 1,
+			ease: 'strong.inOut'
+		}
+	);
 
+ScrollTrigger.create({
+	trigger: '.hero--flat',
+	start: 'top 60%',
+	id: 'hero-flat-scroll-trigger',
+	end: 'bottom bottom',
+	animation: heroFlatTL,
+	toggleActions: 'play none none forward'
+});
+
+var twoColumnsTL = gsap.timeline({ paused: true });
 twoColumnsTL
 	.fromTo(
 		'.two-columns__left',

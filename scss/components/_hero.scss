@@ -48,10 +48,60 @@
 		right: 3rem;
 		overflow: hidden;
 	}
+
+	&--flat {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 40rem;
+		overflow-x: hidden;
+		overflow-y: initial;
+
+		&__img {
+			display: block;
+			position: relative;
+			height: 90%;
+			width: 100%;
+			overflow: hidden;
+			user-select: none;
+			background-color: $bg-primary;
+
+			img {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 1920px;
+				height: 100%;
+				object-fit: cover;
+				object-position: bottom left;
+				opacity: 0.5;
+			}
+		}
+
+		&__line {
+			height: 20%;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: -1;
+			background-color: $bg-secondary;
+		}
+
+		&__content {
+			display: block;
+			position: absolute;
+			bottom: 20%;
+			left: 3rem;
+			overflow: hidden;
+		}
+	}
 }
 
 @media screen and (max-width: 1090px) {
-	.hero {
+	.hero,
+	.hero--flat {
 		&__img {
 			img {
 				width: 1090px;
@@ -61,7 +111,8 @@
 }
 
 @media screen and (max-width: 900px) {
-	.hero {
+	.hero,
+	.hero--flat {
 		height: 30rem;
 
 		&__img {
@@ -73,32 +124,17 @@
 }
 
 @media screen and (max-width: 560px) {
-	.hero {
-		height: 30rem;
-
+	.hero,
+	.hero--flat {
 		&__img {
 			img {
 				width: 560px;
 			}
 		}
 
-		&__img {
-			display: block;
-			position: relative;
-			height: calc(90% - 5rem);
-			width: 80%;
-			transform: skewX(-10deg) translateX(-4rem);
-			overflow: hidden;
-			user-select: none;
-			background-color: $bg-primary;
-		}
-
-		&__line {
-			bottom: 5rem;
-		}
-
 		&__content {
 			bottom: 0;
+			left: 0;
 			right: 0;
 			width: 100%;
 			display: flex;

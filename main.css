@@ -904,42 +904,76 @@ table {
   right: 3rem;
   overflow: hidden;
 }
+.hero--flat {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  overflow-x: hidden;
+  overflow-y: initial;
+}
+.hero--flat__img {
+  display: block;
+  position: relative;
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  background-color: #161616;
+}
+.hero--flat__img img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom left;
+  opacity: 0.5;
+}
+.hero--flat__line {
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #1f5457;
+}
+.hero--flat__content {
+  display: block;
+  position: absolute;
+  bottom: 20%;
+  left: 3rem;
+  overflow: hidden;
+}
 
 @media screen and (max-width: 1090px) {
-  .hero__img img {
+  .hero__img img,
+  .hero--flat__img img {
     width: 1090px;
   }
 }
 @media screen and (max-width: 900px) {
-  .hero {
+  .hero,
+  .hero--flat {
     height: 30rem;
   }
-  .hero__img img {
+  .hero__img img,
+  .hero--flat__img img {
     width: 900px;
   }
 }
 @media screen and (max-width: 560px) {
-  .hero {
-    height: 30rem;
-  }
-  .hero__img img {
+  .hero__img img,
+  .hero--flat__img img {
     width: 560px;
   }
-  .hero__img {
-    display: block;
-    position: relative;
-    height: calc(90% - 5rem);
-    width: 80%;
-    transform: skewX(-10deg) translateX(-4rem);
-    overflow: hidden;
-    user-select: none;
-    background-color: #161616;
-  }
-  .hero__line {
-    bottom: 5rem;
-  }
-  .hero__content {
+  .hero__content,
+  .hero--flat__content {
     bottom: 0;
+    left: 0;
     right: 0;
     width: 100%;
     display: flex;
@@ -947,10 +981,12 @@ table {
     align-items: center;
     padding: 0 1rem;
   }
-  .hero__content__title {
+  .hero__content__title,
+  .hero--flat__content__title {
     text-align: center;
   }
-  .hero__content .btn {
+  .hero__content .btn,
+  .hero--flat__content .btn {
     display: block;
   }
 }
