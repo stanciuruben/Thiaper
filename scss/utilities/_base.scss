@@ -12,6 +12,9 @@
 .overflow-x-hidden {
 	overflow-x: hidden;
 }
+.overflow-y-hidden {
+	overflow-y: hidden;
+}
 // MARGINS
 .mx-auto {
 	margin-left: auto;
@@ -93,6 +96,16 @@
 }
 .relative {
 	position: relative;
+}
+// DISPLAY
+.block {
+	display: block;
+}
+.inline-block {
+	display: inline-block;
+}
+.inline {
+	display: inline;
 }
 // HEIGHTS
 .h-half {
