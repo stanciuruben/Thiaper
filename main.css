@@ -730,11 +730,12 @@ table {
 
 @media screen and (min-width: 1920px) {
   .nav-fixed {
+    width: 1920px;
     left: calc(50% - 960px);
   }
   .nav-fixed .nav-collections__list {
     position: fixed;
-    max-width: 1920px;
+    width: 1920px;
     left: calc(50% - 960px);
   }
 }
