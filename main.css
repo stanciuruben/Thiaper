@@ -1018,7 +1018,7 @@ table {
   height: 50rem;
 }
 .two-columns__left {
-  width: 40rem;
+  width: 45rem;
   height: 30rem;
   position: absolute;
   top: 4rem;
@@ -1051,7 +1051,7 @@ table {
 }
 .two-columns__right {
   z-index: 1;
-  width: 40rem;
+  width: 45rem;
   height: 30rem;
   position: absolute;
   right: 2rem;
@@ -1123,6 +1123,11 @@ table {
   transform: translate(-50%);
 }
 
+@media screen and (max-width: 1600px) {
+  .two-columns__left, .two-columns__right {
+    width: 40rem;
+  }
+}
 @media screen and (max-width: 1440px) {
   .two-columns__left, .two-columns__right {
     width: 32rem;
