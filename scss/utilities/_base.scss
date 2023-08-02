@@ -8,6 +8,16 @@
 	width: 100%;
 	max-width: 1920px;
 }
+
+@media screen and (max-width: 1920px) {
+	.container-hd {
+		max-width: 100%;
+	}
+}
+// WIDTHS
+.w-full {
+	width: 100%;
+}
 // OVERFLOW
 .overflow-x-hidden {
 	overflow-x: hidden;
@@ -47,6 +57,34 @@
 .my-3half {
 	margin-top: 3.5rem;
 	margin-bottom: 3.5rem;
+}
+.mx-half {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.mx-1 {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.mx-1half {
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+.mx-2 {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+.mx-2half {
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+}
+.mx-3 {
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+.mx-3half {
+	margin-left: 3.5rem;
+	margin-right: 3.5rem;
 }
 .mb-half {
 	margin-bottom: 0.5rem;

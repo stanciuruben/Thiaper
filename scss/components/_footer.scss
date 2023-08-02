@@ -63,6 +63,7 @@
 
 	&__bottom {
 		background-color: $black;
+		padding: 1rem 0;
 
 		& .container {
 			display: flex;
@@ -96,6 +97,8 @@
 @media screen and (max-width: 900px) {
 	.footer {
 		&__bottom {
+			padding: 2rem 0;
+
 			& .container {
 				flex-direction: column;
 				gap: 3rem;

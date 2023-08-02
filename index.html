@@ -10,8 +10,8 @@
 		<script src="js/lib/swiper-element-bundle.min.js"></script>
 		<title>Thiaper</title>
 	</head>
-	<body class="container-hd mx-auto overflow-x-hidden">
-		<main>
+	<body>
+		<main class="relative container-hd mx-auto overflow-x-hidden">
 			<nav class="nav nav-fixed container-hd mx-auto">
 				<div class="nav-main">
 					<a href="#" class="nav__logo">Company Logo</a>
@@ -1011,8 +1011,86 @@
 				</div>
 			</footer>
 		</main>
+
+		<dialog
+			open="true"
+			id="onscreen-cart"
+			class="onscreen-cart"
+			style="bottom: -27rem"
+		>
+			<button
+				class="onscreen-cart__toggler"
+				aria-label="On-screen cart toggler"
+				data-toggle="onscreen-cart"
+			>
+				<div class="flex gap-half">
+					<div class="onscreen-cart__toggler__icon">
+						<img src="img/icons/shopping-bag-white.svg" alt="" />
+					</div>
+					<div class="onscreen-cart__toggler__text">Cart</div>
+					<div
+						class="onscreen-cart__toggler__chev"
+						style="transform: rotate(180deg)"
+					>
+						<img src="img/icons/chev-down-white.svg" alt="" />
+					</div>
+				</div>
+				<small class="onscreen-cart__toggler__count">2</small>
+			</button>
+			<ul class="onscreen-cart__list">
+				<li class="onscreen-cart__list__item">
+					<img class="onscreen-cart__list__item__img" src="" alt="" />
+					<div>
+						<div class="onscreen-cart__list__item__content">
+							<p class="onscreen-cart__list__item__title">
+								Jordans Max White Green
+							</p>
+							<p class="onscreen-cart__list__item__price">
+								$299.99
+							</p>
+						</div>
+						<div class="onscreen-cart__list__item__amount">
+							<p>Amount:</p>
+							<button type="button">-</button>
+							<p>1</p>
+							<button type="button">+</button>
+						</div>
+					</div>
+				</li>
+				<li class="onscreen-cart__list__item">
+					<img class="onscreen-cart__list__item__img" src="" alt="" />
+					<div class="onscreen-cart__list__item__content">
+						<div>
+							<p class="onscreen-cart__list__item__title">
+								Jordans Max Black Red
+							</p>
+							<p class="onscreen-cart__list__item__price">
+								$299.99
+							</p>
+						</div>
+						<div class="onscreen-cart__list__item__amount">
+							<p>Amount:</p>
+							<button type="button">-</button>
+							<p>1</p>
+							<button type="button">+</button>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="text-white mx-1 onscreen-cart__total">
+				<span class="onscreen-cart__total__label">Total:</span>
+				<span class="onscreen-cart__total__amount">$599.98</span>
+			</div>
+			<a
+				href="#"
+				class="btn btn--large btn--light onscreen-cart__checkout"
+			>
+				Checkout
+			</a>
+		</dialog>
 	</body>
 
 	<script src="js/components/navbar.js"></script>
+	<script src="js/components/onscreenCart.js"></script>
 	<script src="js/animations.js"></script>
 </html>
