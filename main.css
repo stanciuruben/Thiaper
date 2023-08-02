@@ -670,9 +670,10 @@ table {
   background-color: transparent;
 }
 .nav__link, .nav__link:link, .nav__link:visited, .nav__link:active {
+  display: block;
+  position: relative;
   color: #cbe4de;
   text-decoration: none;
-  display: block;
   background-color: transparent;
   border: none;
   height: 1rem;
@@ -687,6 +688,15 @@ table {
   height: 100%;
   object-fit: contain;
   object-position: center center;
+}
+.nav__link .nav__link__notification, .nav__link:link .nav__link__notification, .nav__link:visited .nav__link__notification, .nav__link:active .nav__link__notification {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  font-size: 0.7rem;
+  background-color: #0e8388;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.8rem;
 }
 .nav__btn, .nav__btn:link, .nav__btn:visited, .nav__btn:active {
   display: inline-block;

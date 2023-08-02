@@ -96,14 +96,15 @@
 	&__link:link,
 	&__link:visited,
 	&__link:active {
+		display: block;
+		position: relative;
 		color: $white;
 		text-decoration: none;
-		display: block;
 		background-color: transparent;
 		border: none;
 		height: 1rem;
 
-		.nav__link__icon {
+		& .nav__link__icon {
 			position: relative;
 			width: 1rem;
 			height: 1rem;
@@ -114,6 +115,16 @@
 				object-fit: contain;
 				object-position: center center;
 			}
+		}
+
+		& .nav__link__notification {
+			position: absolute;
+			top: -0.5rem;
+			left: -0.5rem;
+			font-size: 0.7rem;
+			background-color: $primary;
+			padding: 0.2rem 0.4rem;
+			border-radius: 0.8rem;
 		}
 	}
 
