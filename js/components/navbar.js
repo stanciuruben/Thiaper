@@ -1,3 +1,4 @@
+// Mobile Menu
 var navLinkListOpeners = document.getElementsByClassName(
 	'nav__link-list-opener'
 );
@@ -196,3 +197,83 @@ new Swiper('#swiper-3', {
 		prevEl: '#swiper-button-prev-3'
 	}
 });
+
+// Search
+function toggleSearchForm(searchToggler) {
+	var navLinkListContainer = searchToggler.parentElement.parentElement;
+	var navMain = navLinkListContainer.parentElement;
+	if (searchToggler.getAttribute('aria-expanded') === 'false') {
+		// Check if the mobile navigation is open and close it
+		var navLinkListCloser = navLinkListContainer.getElementsByClassName(
+			'nav__link-list-closer'
+		)[0];
+		var navLinkListOpener = navMain.getElementsByClassName(
+			'nav__link-list-opener'
+		)[0];
+
+		if (
+			navLinkListOpener.getAttribute('aria-expanded') === 'true' &&
+			navLinkListCloser.getAttribute('aria-expanded') === 'true'
+		) {
+			toggleMobileMenu(navLinkListCloser, navLinkListOpener);
+		}
+		// Display the search form
+		var navSearch =
+			navMain.parentElement.getElementsByClassName('nav__search')[0];
+		navSearch.style.display = 'block';
+		// Focus the search input inside the form
+		navSearch.getElementsByClassName('nav__search__input')[0].focus();
+		// Set aria-expanded to true
+		searchToggler.setAttribute('aria-expanded', 'true');
+	} else {
+		// Remove the search form
+		var navSearch =
+			navMain.parentElement.getElementsByClassName('nav__search')[0];
+		navSearch.style.display = 'none';
+		// Set aria-expanded to false
+		searchToggler.setAttribute('aria-expanded', 'false');
+	}
+}
+
+var searchTogglers = document.getElementsByClassName('nav__search-toggler');
+
+for (var i = 0; i < searchTogglers.length; i++) {
+	var toggler = searchTogglers[i];
+	toggler.addEventListener('click', toggleSearchForm.bind(this, toggler));
+}
+
+function toggleEraseButton(inputElement) {
+	var navSearch = inputElement.parentElement;
+	var eraseButton = navSearch.getElementsByClassName('nav__search__erase')[0];
+
+	if (inputElement.value.length > 0) {
+		eraseButton.style.display = 'block';
+		return;
+	}
+	eraseButton.style.display = 'none';
+}
+
+var searchInputs = document.getElementsByClassName('nav__search__input');
+
+for (var i = 0; i < searchInputs.length; i++) {
+	var input = searchInputs[i];
+
+	input.addEventListener('input', toggleEraseButton.bind(this, input));
+	input.addEventListener('focus', toggleEraseButton.bind(this, input));
+}
+
+function eraseInput(eraseButton) {
+	var navSearch = eraseButton.parentElement;
+	var inputElement =
+		navSearch.getElementsByClassName('nav__search__input')[0];
+	inputElement.value = '';
+	inputElement.focus();
+	eraseButton.style.display = 'none';
+}
+
+var eraseButtons = document.getElementsByClassName('nav__search__erase');
+
+for (var i = 0; i < eraseButtons.length; i++) {
+	var eraseButton = eraseButtons[i];
+	eraseButton.addEventListener('click', eraseInput.bind(this, eraseButton));
+}

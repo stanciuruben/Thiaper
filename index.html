@@ -44,6 +44,23 @@
 							id="nav__link-list"
 							class="nav__link-list scrollbar-hide"
 						>
+							<button
+								class="nav__link nav__search-toggler"
+								aria-label="Search toggler"
+								title="Search"
+								aria-controls="search"
+								aria-expanded="false"
+							>
+								<div class="nav__link__icon">
+									<img
+										src="img/icons/search-white.svg"
+										alt=""
+									/>
+								</div>
+								<div class="nav__search-toggler__label">
+									Search
+								</div>
+							</button>
 							<a href="#" class="nav__link" aria-label="Cart">
 								<div class="flex gap-half">
 									<div class="nav__link__icon">
@@ -84,6 +101,40 @@
 						</div>
 					</div>
 				</div>
+				<!-- START SEARCH FORM -->
+				<form
+					id="search"
+					class="nav__search"
+					action="javascript:void(0)"
+				>
+					<input
+						type="text"
+						name="search-input"
+						class="nav__search__input"
+						placeholder="Search"
+					/>
+					<button
+						class="nav__search__erase"
+						type="button"
+						aria-label="Erase"
+						title="Erase"
+					>
+						<div class="nav__search__erase__icon">
+							<img src="img/icons/x-white.svg" alt="" />
+						</div>
+					</button>
+					<button
+						class="nav__search__submit"
+						aria-label="Search button"
+						title="Search"
+						type="submit"
+					>
+						<div class="nav__link__icon">
+							<img src="img/icons/search-white.svg" alt="" />
+						</div>
+					</button>
+				</form>
+				<!-- END SEARCH FORM -->
 				<div class="nav-collections">
 					<ul
 						id="nav-collections__links"

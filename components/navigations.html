@@ -87,6 +87,133 @@
 		<!--  -->
 		<!--  -->
 		<!--  -->
+		<!-- START NAVIGATION WITH SEARCH BAR -->
+		<h1 class="heading-3 text-white text-center mt-3 mb-1">
+			NAVIGATION WITH SEARCH BAR
+		</h1>
+		<nav class="nav container-hd mx-auto">
+			<div class="nav-main">
+				<a href="#" class="nav__logo">Company Logo</a>
+				<button
+					type="button"
+					class="nav__link-list-opener"
+					aria-controls="nav__link-list-container"
+					aria-expanded="false"
+					aria-label="Open mobile navigation"
+				>
+					<img
+						src="../img/icons/hamburger-white.svg"
+						alt="Hamburger icon"
+					/>
+				</button>
+				<div
+					id="nav__link-list-container"
+					class="nav__link-list-container"
+				>
+					<button
+						type="button"
+						class="nav__link-list-closer"
+						aria-controls="nav__link-list-container"
+						aria-expanded="false"
+						aria-label="Close mobile navigation"
+					>
+						<img src="../img/icons/x-white.svg" alt="X icon" />
+					</button>
+					<div
+						id="nav__link-list"
+						class="nav__link-list scrollbar-hide"
+					>
+						<button
+							class="nav__link nav__search-toggler"
+							aria-label="Search toggler"
+							title="Search"
+							aria-controls="search"
+							aria-expanded="false"
+						>
+							<div class="nav__link__icon">
+								<img
+									src="../img/icons/search-white.svg"
+									alt=""
+								/>
+							</div>
+							<div class="nav__search-toggler__label">Search</div>
+						</button>
+						<a href="#" class="nav__link" aria-label="Cart">
+							<div class="flex gap-half">
+								<div class="nav__link__icon">
+									<img
+										src="../img/icons/shopping-bag-white.svg"
+										alt=""
+									/>
+								</div>
+								<div>Cart</div>
+							</div>
+							<small class="nav__link__notification">2</small>
+						</a>
+						<a href="#" class="nav__link" aria-label="Wishlist">
+							<div class="flex gap-half">
+								<div class="nav__link__icon">
+									<img
+										src="../img/icons/heart-icon-white.svg"
+										alt=""
+									/>
+								</div>
+								<div>Wishlist</div>
+							</div>
+						</a>
+						<a href="#" class="nav__link" aria-label="Coupons">
+							<div class="flex gap-half">
+								<div class="nav__link__icon">
+									<img
+										src="../img/icons/discount-icon-white.svg"
+										alt=""
+									/>
+								</div>
+								<div>Coupons</div>
+							</div>
+							<small class="nav__link__notification">1</small>
+						</a>
+						<a href="#" class="nav__btn">Login</a>
+					</div>
+				</div>
+			</div>
+			<!-- START SEARCH FORM -->
+			<form id="search" class="nav__search" action="javascript:void(0)">
+				<input
+					type="text"
+					name="search-input"
+					class="nav__search__input"
+					placeholder="Search"
+				/>
+				<button
+					class="nav__search__erase"
+					type="button"
+					aria-label="Erase"
+					title="Erase"
+				>
+					<div class="nav__search__erase__icon">
+						<img src="../img/icons/x-white.svg" alt="" />
+					</div>
+				</button>
+				<button
+					class="nav__search__submit"
+					aria-label="Search button"
+					title="Search"
+					type="submit"
+				>
+					<div class="nav__link__icon">
+						<img src="../img/icons/search-white.svg" alt="" />
+					</div>
+				</button>
+			</form>
+			<!-- END SEARCH FORM -->
+		</nav>
+		<!-- END NAVIGATION WITH SEARCH BAR -->
+		<!--  -->
+		<!--  -->
+		<!--  -->
+		<!--  -->
+		<!--  -->
 		<!-- START NAVIGATION WITH COLLECTIONS -->
 		<h1 class="heading-3 text-white text-center mt-3 mb-1">
 			NAVIGATION WITH COLLECTIONS
@@ -179,9 +306,6 @@
 							id="nav-collections__list-1"
 							class="nav-collections__list"
 						>
-							<hgroup class="container mx-auto">
-								<h5 class="heading-3 mb-1half">Categories</h5>
-							</hgroup>
 							<div class="container flex gap-1half mx-auto">
 								<div class="nav-collections__list__showcase">
 									<img
@@ -202,35 +326,35 @@
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Brand T-shirts</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Long sleeve shirts</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Chinos</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Cargo Pants</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Skirts</a
 										>
 									</dd>
 								</dl>
@@ -240,49 +364,49 @@
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>T-shirts</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Sweatshirts</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Shorts</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Bike Shorts</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Rain Jackets</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Training Socks</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Swimsuits</a
 										>
 									</dd>
 								</dl>
@@ -349,100 +473,7 @@
 							id="nav-collections__list-2"
 							class="nav-collections__list"
 						>
-							<hgroup class="container mx-auto">
-								<h5 class="heading-3 mb-1half">Categories</h5>
-							</hgroup>
 							<div class="container flex gap-1half mx-auto">
-								<dl class="nav-collections__list__sublist">
-									<dt>Sneakers</dt>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-								</dl>
-								<dl class="nav-collections__list__sublist">
-									<dt>Business shoes</dt>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-									<dd>
-										<a
-											href="#"
-											class="nav-collections__list__sublist__link"
-											>Link</a
-										>
-									</dd>
-								</dl>
 								<div class="nav-collections__list__showcase">
 									<img
 										class="nav-collections__list__showcase__img"
@@ -456,6 +487,82 @@
 										Shop Now
 									</a>
 								</div>
+								<dl class="nav-collections__list__sublist">
+									<dt>Sneakers</dt>
+									<dd>
+										<a
+											href="#"
+											class="nav-collections__list__sublist__link"
+											>Low Top</a
+										>
+									</dd>
+									<dd>
+										<a
+											href="#"
+											class="nav-collections__list__sublist__link"
+											>High Top</a
+										>
+									</dd>
+									<dd>
+										<a
+											href="#"
+											class="nav-collections__list__sublist__link"
+											>Big Brands</a
+										>
+									</dd>
+									<dd>
+										<a
+											href="#"
+											class="nav-collections__list__sublist__link"
+											>Jordans</a
+										>
+									</dd>
+									<dd>
+										<a
+											href="#"
+											class="nav-collections__list__sublist__link"
+											>Trainers</a
+										>
+									</dd>
+								</dl>
+								<dl class="nav-collections__list__sublist">
+									<dt>Business shoes</dt>
+									<dd>
+										<a
+											href="#"
+											class="nav-collections__list__sublist__link"
+											>Mocasins</a
+										>
+									</dd>
+									<dd>
+										<a
+											href="#"
+											class="nav-collections__list__sublist__link"
+											>Schnurschuhe</a
+										>
+									</dd>
+									<dd>
+										<a
+											href="#"
+											class="nav-collections__list__sublist__link"
+											>Boots</a
+										>
+									</dd>
+									<dd>
+										<a
+											href="#"
+											class="nav-collections__list__sublist__link"
+											>Big sole</a
+										>
+									</dd>
+									<dd>
+										<a
+											href="#"
+											class="nav-collections__list__sublist__link"
+											>Small sole</a
+										>
+									</dd>
+								</dl>
 							</div>
 							<div class="container mx-auto relative">
 								<h5 class="heading-3 my-1half">Brands</h5>
@@ -595,42 +702,42 @@
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Belt</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Bracelet</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Sport</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Smart Watches</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Mechanink</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Big Brands</a
 										>
 									</dd>
 								</dl>
@@ -640,28 +747,28 @@
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Bracelets</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Chains</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Rings</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Earrings</a
 										>
 									</dd>
 								</dl>
@@ -671,28 +778,28 @@
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Leather</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Sinthetic Leather</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Sport</a
 										>
 									</dd>
 									<dd>
 										<a
 											href="#"
 											class="nav-collections__list__sublist__link"
-											>Link</a
+											>Big Brands</a
 										>
 									</dd>
 								</dl>
