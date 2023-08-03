@@ -54,29 +54,30 @@
 				width: 1.5rem;
 				height: 1.5rem;
 			}
-
-			&:hover {
-				transform: rotate(3deg);
-			}
 		}
 
 		&-closer {
 			display: none;
-			background: transparent;
+			position: relative;
 			border: none;
 			cursor: pointer;
-			position: fixed;
-			top: 1.5rem;
-			right: 1.5rem;
-			transition: transform 0.4s ease;
+			top: 0;
+			width: calc(100% - 18rem);
+			height: 100%;
+			background-color: transparent;
+			transition: background-color 0s;
 
 			& img {
 				width: 1.5rem;
 				height: 1.5rem;
+				position: absolute;
+				top: 1.5rem;
+				right: 1.5rem;
 			}
 
-			&:hover {
-				transform: rotate(-3deg);
+			&[aria-expanded='true'] {
+				background-color: rgba($color: $black, $alpha: 0.5);
+				transition: background-color 0.4s 0.4s ease;
 			}
 		}
 	}
@@ -410,13 +411,14 @@
 		}
 
 		&__link-list {
-			width: 100%;
+			width: 18rem;
 			height: 100%;
 			flex-direction: column;
 			justify-content: start;
 			align-items: start;
 			overflow-y: scroll;
 			padding: 0 1.5rem;
+			background-color: $bg-secondary;
 
 			&__title {
 				display: block;
@@ -425,12 +427,12 @@
 			&-container {
 				box-sizing: border-box;
 				position: fixed;
+				display: flex;
 				top: 0;
 				left: 0;
-				width: 20rem;
+				width: 100%;
 				height: 100%;
-				background-color: $bg-secondary;
-				transform: translateX(-100%);
+				transform: translateX(100%);
 				z-index: 1000;
 			}
 

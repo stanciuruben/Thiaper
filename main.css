@@ -686,25 +686,27 @@ table {
   width: 1.5rem;
   height: 1.5rem;
 }
-.nav__link-list-opener:hover {
-  transform: rotate(3deg);
-}
 .nav__link-list-closer {
   display: none;
-  background: transparent;
+  position: relative;
   border: none;
   cursor: pointer;
-  position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
-  transition: transform 0.4s ease;
+  top: 0;
+  width: calc(100% - 18rem);
+  height: 100%;
+  background-color: transparent;
+  transition: background-color 0s;
 }
 .nav__link-list-closer img {
   width: 1.5rem;
   height: 1.5rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 }
-.nav__link-list-closer:hover {
-  transform: rotate(-3deg);
+.nav__link-list-closer[aria-expanded=true] {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.4s 0.4s ease;
 }
 .nav__logo, .nav__logo:link, .nav__logo:visited, .nav__logo:active {
   font-size: 25px;
@@ -963,13 +965,14 @@ table {
     width: 14rem;
   }
   .nav__link-list {
-    width: 100%;
+    width: 18rem;
     height: 100%;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     overflow-y: scroll;
     padding: 0 1.5rem;
+    background-color: #1f5457;
   }
   .nav__link-list__title {
     display: block;
@@ -977,12 +980,12 @@ table {
   .nav__link-list-container {
     box-sizing: border-box;
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
-    width: 20rem;
+    width: 100%;
     height: 100%;
-    background-color: #1f5457;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     z-index: 1000;
   }
   .nav__link-list-opener[aria-expanded=true] ~ .nav__link-list-container {
