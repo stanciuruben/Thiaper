@@ -61,7 +61,14 @@
 									Search
 								</div>
 							</button>
-							<a href="#" class="nav__link" aria-label="Cart">
+							<button
+								type="button"
+								class="nav__link"
+								aria-label="Cart"
+								data-open="onscreen-cart"
+								aria-controls="onscreen-cart"
+								aria-expanded="false"
+							>
 								<div class="flex gap-half">
 									<div class="nav__link__icon">
 										<img
@@ -72,7 +79,7 @@
 									<div>Cart</div>
 								</div>
 								<small class="nav__link__notification">2</small>
-							</a>
+							</button>
 							<a href="#" class="nav__link" aria-label="Wishlist">
 								<div class="flex gap-half">
 									<div class="nav__link__icon">
@@ -96,7 +103,10 @@
 								</div>
 								<small class="nav__link__notification">1</small>
 							</a>
-							<a href="#" class="nav__btn">Login</a>
+							<div class="flex gap-1">
+								<a href="#" class="btn btn--light-2">Login</a>
+								<a href="#" class="btn btn--light">Register</a>
+							</div>
 							<h5 class="nav__link-list__title">Collections</h5>
 						</div>
 					</div>
@@ -1089,88 +1099,111 @@
 					</div>
 				</div>
 			</footer>
-		</main>
 
-		<dialog
-			open="true"
-			id="onscreen-cart"
-			class="onscreen-cart"
-			style="bottom: -27rem"
-		>
-			<button
-				class="onscreen-cart__toggler"
-				aria-label="On-screen cart toggler"
-				data-toggle="onscreen-cart"
-			>
-				<div class="flex gap-half">
-					<div class="onscreen-cart__toggler__icon">
-						<img src="img/icons/shopping-bag-white.svg" alt="" />
+			<dialog id="onscreen-cart" class="side-modal">
+				<button
+					class="side-modal__closer"
+					aria-label="On-screen cart close button"
+					data-close="onscreen-cart"
+					aria-controls="onscreen-cart"
+					aria-expanded="false"
+				>
+					<div class="side-modal__closer__icon">
+						<img src="img/icons/x-white.svg" alt="" />
 					</div>
-					<div class="onscreen-cart__toggler__text">Cart</div>
-					<div
-						class="onscreen-cart__toggler__chev"
-						style="transform: rotate(180deg)"
+				</button>
+				<div class="side-modal__content">
+					<hgroup class="side-modal__title">
+						<h2 class="heading-2 side-modal__title__text">Cart</h2>
+						<span class="side-modal__title__count">2</span>
+					</hgroup>
+					<ul class="side-modal__list scrollbar-hide">
+						<li class="side-modal__list__item">
+							<div class="side-modal__list__item__img">
+								<img
+									src="img/placeholder/skincare.jpg"
+									alt=""
+								/>
+							</div>
+							<div>
+								<p class="side-modal__list__item__title">
+									Sun Protection 30
+								</p>
+								<div class="flex align-items-center gap-half">
+									<span class="side-modal__list__item__amount"
+										>1</span
+									>
+									<span class="side-modal__list__item__price">
+										$29.99
+									</span>
+									<button
+										type="button"
+										class="btn btn--danger btn--small"
+										title="Remove item"
+									>
+										<div class="icon-extrasmall">
+											<img
+												src="img/icons/trash-white.svg"
+												alt=""
+											/>
+										</div>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="side-modal__list__item">
+							<div class="side-modal__list__item__img">
+								<img
+									src="img/placeholder/skincare.jpg"
+									alt=""
+								/>
+							</div>
+							<div>
+								<p class="side-modal__list__item__title">
+									Skin Moisturizer - Aloe Vera Extract
+								</p>
+								<div class="flex align-items-center gap-half">
+									<span class="side-modal__list__item__amount"
+										>1</span
+									>
+									<span class="side-modal__list__item__price">
+										$29.99
+									</span>
+									<button
+										type="button"
+										class="btn btn--danger btn--small"
+										title="Remove item"
+									>
+										<div class="icon-extrasmall">
+											<img
+												src="img/icons/trash-white.svg"
+												alt=""
+											/>
+										</div>
+									</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="text-white mx-1 side-modal__total">
+						<span>Total:</span>
+						<span>$59.98</span>
+					</div>
+					<a
+						href="#"
+						class="btn btn--large btn--secondary side-modal__cta"
 					>
-						<img src="img/icons/chev-down-white.svg" alt="" />
-					</div>
+						View Cart
+					</a>
+					<a
+						href="#"
+						class="btn btn--large btn--primary side-modal__cta"
+					>
+						Checkout
+					</a>
 				</div>
-				<small class="onscreen-cart__toggler__count">2</small>
-			</button>
-			<ul class="onscreen-cart__list">
-				<li class="onscreen-cart__list__item">
-					<div class="onscreen-cart__list__item__img">
-						<img src="img/icons/discount-icon-white.svg" alt="" />
-					</div>
-					<div>
-						<div class="onscreen-cart__list__item__content">
-							<p class="onscreen-cart__list__item__title">
-								Jordans Max White Green
-							</p>
-							<p class="onscreen-cart__list__item__price">
-								$299.99
-							</p>
-						</div>
-						<div class="onscreen-cart__list__item__amount">
-							<p>Amount:</p>
-							<button type="button">-</button>
-							<p>1</p>
-							<button type="button">+</button>
-						</div>
-					</div>
-				</li>
-				<li class="onscreen-cart__list__item">
-					<div class="onscreen-cart__list__item__img">
-						<img src="img/icons/discount-icon-white.svg" alt="" />
-					</div>
-					<div class="onscreen-cart__list__item__content">
-						<div>
-							<p class="onscreen-cart__list__item__title">
-								Jordans Max Black Red
-							</p>
-							<p class="onscreen-cart__list__item__price">
-								$299.99
-							</p>
-						</div>
-						<div class="onscreen-cart__list__item__amount">
-							<p>Amount:</p>
-							<button type="button">-</button>
-							<p>1</p>
-							<button type="button">+</button>
-						</div>
-					</div>
-				</li>
-			</ul>
-			<div class="text-white mx-1 onscreen-cart__total">
-				<span class="onscreen-cart__total__label">Total:</span>
-				<span class="onscreen-cart__total__amount">$599.98</span>
-			</div>
-			<a
-				href="#"
-				class="btn btn--large btn--light onscreen-cart__checkout"
-			>
-				Checkout
-			</a>
-		</dialog>
+			</dialog>
+		</main>
 	</body>
 
 	<script src="js/components/navbar.js"></script>
