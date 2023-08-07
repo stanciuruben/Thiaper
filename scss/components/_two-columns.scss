@@ -105,13 +105,19 @@
 				position: relative;
 				width: 100%;
 				height: 30rem;
+				overflow: hidden;
 
 				img {
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
+					object-position: center center;
 					position: absolute;
+					top: 0;
+					left: 0;
 					opacity: 0.5;
+					transition: left 0.4s ease-out, top 0.4s ease-out,
+						width 0.4s ease-out, height 0.4s ease-out;
 				}
 
 				& .btn.btn--large {
@@ -119,6 +125,14 @@
 					bottom: 1rem;
 					left: 50%;
 					transform: translate(-50%);
+
+					&:hover ~ img,
+					&:focus ~ img {
+						top: -5%;
+						left: -5%;
+						width: 110%;
+						height: 110%;
+					}
 				}
 			}
 		}
