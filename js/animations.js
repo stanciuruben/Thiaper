@@ -149,6 +149,41 @@ ScrollTrigger.create({
 	toggleActions: 'play none none forward'
 });
 
-// window.addEventListener('load', function () {
-// 	heroTL.play();
-// });
+var twoColumnsFlatTL = gsap.timeline({ paused: true });
+twoColumnsFlatTL
+	.fromTo(
+		'.two-columns--flat__left',
+		{
+			y: '10%',
+			opacity: 0
+		},
+		{
+			y: 0,
+			opacity: 1,
+			duration: 1,
+			ease: 'strong.inOut'
+		}
+	)
+	.fromTo(
+		'.two-columns--flat__right',
+		{
+			y: '10%',
+			opacity: 0
+		},
+		{
+			y: 0,
+			opacity: 1,
+			duration: 1,
+			ease: 'strong.inOut'
+		},
+		'>-1'
+	);
+
+ScrollTrigger.create({
+	trigger: '.two-columns--flat',
+	start: 'top 60%',
+	id: 'two-columns-flat-scroll-trigger',
+	end: 'bottom bottom',
+	animation: twoColumnsFlatTL,
+	toggleActions: 'play none none forward'
+});

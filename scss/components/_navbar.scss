@@ -60,12 +60,12 @@
 			display: none;
 			position: relative;
 			border: none;
-			cursor: pointer;
 			top: 0;
 			width: calc(100% - 18rem);
 			height: 100%;
 			background-color: transparent;
-			transition: background-color 0s;
+			opacity: 0;
+			transition: background-color 0s, opacity 0s;
 
 			& img {
 				width: 1.5rem;
@@ -77,7 +77,9 @@
 
 			&[aria-expanded='true'] {
 				background-color: rgba($color: $black, $alpha: 0.5);
-				transition: background-color 0.4s 0.4s ease;
+				opacity: 1;
+				transition: background-color 0.4s 0.4s ease-out,
+					opacity 0.4s 0.4s ease-out;
 			}
 		}
 	}
@@ -126,29 +128,10 @@
 			position: absolute;
 			top: -0.5rem;
 			left: -0.5rem;
-			font-size: 0.7rem;
+			font-size: 0.5rem;
 			background-color: $primary;
-			padding: 0.2rem 0.4rem;
-			border-radius: 0.8rem;
-		}
-	}
-
-	&__btn,
-	&__btn:link,
-	&__btn:visited,
-	&__btn:active {
-		display: inline-block;
-		color: $white;
-		text-decoration: none;
-		background-color: transparent;
-		border: 1px solid $white;
-		padding: 0.5rem 1rem;
-		cursor: pointer;
-		transition: background-color 0.3s ease, color 0.3s ease;
-
-		&:hover {
-			color: $black;
-			background-color: $white;
+			padding: 0.2rem 0.3rem;
+			border-radius: 0.5rem;
 		}
 	}
 
@@ -457,6 +440,21 @@
 		&-collections {
 			&__links {
 				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.nav {
+		&__link-list {
+			&-closer {
+				img {
+					right: auto;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
 			}
 		}
 	}

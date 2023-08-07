@@ -40,6 +40,7 @@
 		}
 
 		&:hover,
+		&:focus,
 		&:active {
 			color: $white;
 
@@ -70,6 +71,7 @@
 		}
 
 		&:hover,
+		&:focus,
 		&:active {
 			&::before {
 				width: 100%;
@@ -86,9 +88,44 @@
 		transition: background-color 0.3s ease-out, color 0.3s ease-out,
 			border-color 0.3s ease-out;
 
-		&:hover {
-			background-color: $black;
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $primary;
 			color: $white;
+			border-color: $primary;
+		}
+	}
+
+	&--light-2 {
+		position: relative;
+		border: 2px solid $white;
+		color: $white;
+		background-color: transparent;
+		z-index: 1;
+		transition: color 0.3s ease-out, border-color 0.3s ease-out;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $primary;
+			border-color: $primary;
+		}
+	}
+
+	&--danger {
+		position: relative;
+		border: 2px solid $secondary;
+		color: $white;
+		background-color: $secondary;
+		z-index: 1;
+		transition: background-color 0.3s ease-out, color 0.3s ease-out,
+			border-color 0.3s ease-out;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $black;
 			border-color: $black;
 		}
 	}
@@ -96,6 +133,12 @@
 	&--large {
 		padding: 0.75rem 1.5rem;
 		font-weight: 700;
+	}
+
+	&--small {
+		padding: 0.25rem 0.5rem;
+		font-weight: 500;
+		font-size: $fsize-small;
 	}
 }
 
