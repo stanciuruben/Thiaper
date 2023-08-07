@@ -536,6 +536,10 @@ table {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.btn[disabled=true] {
+  opacity: 0.8;
+  pointer-events: none;
+}
 .btn--primary {
   position: relative;
   border: 2px solid #cbe4de;

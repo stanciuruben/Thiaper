@@ -3,7 +3,7 @@ var cartOpeners = document.querySelectorAll('*[data-open="onscreen-cart"]');
 var cartClosers = document.querySelectorAll('*[data-close="onscreen-cart"]');
 var cartOpenClass = 'side-modal--open';
 
-function setAriaExpanded(isExpanded) {
+function setCartAriaExpanded(isExpanded) {
 	for (var i = 0; i < cartOpeners.length; i++) {
 		cartOpeners[i].setAttribute('aria-expanded', isExpanded);
 	}
@@ -20,7 +20,7 @@ for (var i = 0; i < cartOpeners.length; i++) {
 			onScreenCart.close();
 			onScreenCart.show();
 			onScreenCart.classList.add(cartOpenClass);
-			setAriaExpanded('true');
+			setCartAriaExpanded('true');
 		}
 	});
 }
@@ -32,7 +32,7 @@ for (var i = 0; i < cartClosers.length; i++) {
 		if (cartCloser.getAttribute('aria-expanded') === 'true') {
 			onScreenCart.classList.remove(cartOpenClass);
 			onScreenCart.close();
-			setAriaExpanded('false');
+			setCartAriaExpanded('false');
 		}
 	});
 }

@@ -80,7 +80,14 @@
 								</div>
 								<small class="nav__link__notification">2</small>
 							</button>
-							<a href="#" class="nav__link" aria-label="Wishlist">
+							<a
+								href="#"
+								class="nav__link"
+								aria-label="Wishlist"
+								data-open="onscreen-wishlist"
+								aria-controls="onscreen-wishlist"
+								aria-expanded="false"
+							>
 								<div class="flex gap-half">
 									<div class="nav__link__icon">
 										<img
@@ -1203,10 +1210,54 @@
 					</a>
 				</div>
 			</dialog>
+
+			<dialog id="onscreen-wishlist" class="side-modal">
+				<button
+					class="side-modal__closer"
+					aria-label="On-screen wishlist close button"
+					data-close="onscreen-wishlist"
+					aria-controls="onscreen-wishlist"
+					aria-expanded="false"
+				>
+					<div class="side-modal__closer__icon">
+						<img src="img/icons/x-white.svg" alt="" />
+					</div>
+				</button>
+				<div class="side-modal__content">
+					<hgroup class="side-modal__title">
+						<h2 class="heading-2 side-modal__title__text">
+							Wishlist
+						</h2>
+					</hgroup>
+					<ul class="side-modal__list scrollbar-hide">
+						<div class="text-white text-center">
+							Wishlist is empty
+						</div>
+					</ul>
+					<div class="text-white mx-1 side-modal__total">
+						<span>Total:</span>
+						<span>$00.00</span>
+					</div>
+					<a
+						href="#"
+						class="btn btn--large btn--secondary side-modal__cta"
+					>
+						View Wishlist
+					</a>
+					<a
+						href="#"
+						class="btn btn--large btn--primary side-modal__cta"
+						disabled="true"
+					>
+						Add All To Cart
+					</a>
+				</div>
+			</dialog>
 		</main>
 	</body>
 
 	<script src="js/components/navbar.js"></script>
 	<script src="js/components/onscreenCart.js"></script>
+	<script src="js/components/onscreenWishlist.js"></script>
 	<script src="js/animations.js"></script>
 </html>
