@@ -613,14 +613,24 @@ table {
   border-color: #0e8388;
 }
 .btn--danger {
-  position: relative;
   border: 2px solid #88130e;
   color: #cbe4de;
   background-color: #88130e;
   z-index: 1;
-  transition: background-color 0.3s ease-out, color 0.3s ease-out, border-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out, border-color 0.3s ease-out;
 }
 .btn--danger:hover, .btn--danger:focus, .btn--danger:active {
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn--success {
+  border: 2px solid #0e8388;
+  color: #cbe4de;
+  background-color: #0e8388;
+  z-index: 1;
+  transition: background-color 0.3s ease-out, border-color 0.3s ease-out;
+}
+.btn--success:hover, .btn--success:focus, .btn--success:active {
   background-color: #000000;
   border-color: #000000;
 }
@@ -1540,7 +1550,7 @@ table {
   transition: left 0.4s ease-out;
 }
 .side-modal__title {
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   height: 2.3rem;
   display: flex;
   gap: 0.5rem;
@@ -1591,11 +1601,15 @@ table {
 .side-modal__content {
   background-color: #2b2b2b;
   width: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 .side-modal__list {
-  display: flex;
-  height: calc(100% - 17rem);
-  margin: 1rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-height: calc(100% - 16rem);
+  margin: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -1640,15 +1654,11 @@ table {
   font-size: 12px;
   color: #cbe4de;
   position: relative;
-  font-weight: 900;
   margin-right: 0.5rem;
 }
 .side-modal__list__item__amount::after {
-  content: "x";
+  content: "X";
   position: absolute;
-  height: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
   right: -0.5rem;
 }
 .side-modal__total {
@@ -1656,10 +1666,12 @@ table {
   justify-content: space-between;
   font-weight: 900;
   font-size: 1.2rem;
+  margin: 0.5rem 1rem;
+  color: #cbe4de;
 }
 .side-modal__cta {
   display: block;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
 }
 
 @media screen and (max-width: 400px) {

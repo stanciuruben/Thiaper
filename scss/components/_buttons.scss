@@ -119,13 +119,26 @@
 	}
 
 	&--danger {
-		position: relative;
 		border: 2px solid $secondary;
 		color: $white;
 		background-color: $secondary;
 		z-index: 1;
-		transition: background-color 0.3s ease-out, color 0.3s ease-out,
-			border-color 0.3s ease-out;
+		transition: background-color 0.3s ease-out, border-color 0.3s ease-out;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $black;
+			border-color: $black;
+		}
+	}
+
+	&--success {
+		border: 2px solid $primary;
+		color: $white;
+		background-color: $primary;
+		z-index: 1;
+		transition: background-color 0.3s ease-out, border-color 0.3s ease-out;
 
 		&:hover,
 		&:focus,

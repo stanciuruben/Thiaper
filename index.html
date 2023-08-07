@@ -98,7 +98,14 @@
 									<div>Wishlist</div>
 								</div>
 							</a>
-							<a href="#" class="nav__link" aria-label="Coupons">
+							<a
+								href="#"
+								class="nav__link"
+								aria-label="Coupons"
+								data-open="onscreen-coupons"
+								aria-controls="onscreen-coupons"
+								aria-expanded="false"
+							>
 								<div class="flex gap-half">
 									<div class="nav__link__icon">
 										<img
@@ -1192,7 +1199,7 @@
 							</div>
 						</li>
 					</ul>
-					<div class="text-white mx-1 side-modal__total">
+					<div class="side-modal__total">
 						<span>Total:</span>
 						<span>$59.98</span>
 					</div>
@@ -1200,7 +1207,7 @@
 						href="#"
 						class="btn btn--large btn--secondary side-modal__cta"
 					>
-						View Cart
+						Manage Cart
 					</a>
 					<a
 						href="#"
@@ -1234,7 +1241,7 @@
 							Wishlist is empty
 						</div>
 					</ul>
-					<div class="text-white mx-1 side-modal__total">
+					<div class="side-modal__total">
 						<span>Total:</span>
 						<span>$00.00</span>
 					</div>
@@ -1242,7 +1249,7 @@
 						href="#"
 						class="btn btn--large btn--secondary side-modal__cta"
 					>
-						View Wishlist
+						Manage Wishlist
 					</a>
 					<a
 						href="#"
@@ -1253,11 +1260,85 @@
 					</a>
 				</div>
 			</dialog>
+
+			<dialog id="onscreen-coupons" class="side-modal">
+				<button
+					class="side-modal__closer"
+					aria-label="On-screen coupons close button"
+					data-close="onscreen-coupons"
+					aria-controls="onscreen-coupons"
+					aria-expanded="false"
+				>
+					<div class="side-modal__closer__icon">
+						<img src="img/icons/x-white.svg" alt="" />
+					</div>
+				</button>
+				<div class="side-modal__content">
+					<hgroup class="side-modal__title">
+						<h2 class="heading-2 side-modal__title__text">
+							Coupons
+						</h2>
+						<span class="side-modal__title__count">1</span>
+					</hgroup>
+					<ul class="side-modal__list scrollbar-hide">
+						<li class="side-modal__list__item">
+							<div class="side-modal__list__item__img">
+								<img
+									src="img/placeholder/skincare.jpg"
+									alt=""
+								/>
+							</div>
+							<div>
+								<p class="side-modal__list__item__title">
+									10% off every skincare product
+								</p>
+								<div class="flex align-items-center gap-half">
+									<span class="side-modal__list__item__amount"
+										>1</span
+									>
+									<span class="side-modal__list__item__price">
+										10%
+									</span>
+									<button
+										type="button"
+										class="btn btn--success btn--small"
+										title="Activate Coupon"
+									>
+										<div class="icon-extrasmall">
+											<img
+												src="img/icons/chev-right-white.svg"
+												alt=""
+											/>
+										</div>
+									</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="side-modal__total">
+						<span>Activable:</span>
+						<span>1</span>
+					</div>
+					<a
+						href="#"
+						class="btn btn--large btn--secondary side-modal__cta"
+					>
+						Manage Coupons
+					</a>
+					<a
+						href="#"
+						class="btn btn--large btn--primary side-modal__cta"
+					>
+						Activate All
+					</a>
+				</div>
+			</dialog>
 		</main>
 	</body>
 
 	<script src="js/components/navbar.js"></script>
 	<script src="js/components/onscreenCart.js"></script>
 	<script src="js/components/onscreenWishlist.js"></script>
+	<script src="js/components/onscreenCoupons.js"></script>
 	<script src="js/animations.js"></script>
 </html>
