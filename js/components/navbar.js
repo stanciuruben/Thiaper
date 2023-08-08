@@ -199,47 +199,59 @@ new Swiper('#swiper-3', {
 });
 
 // Search
-function toggleSearchForm(searchToggler) {
-	var navLinkListContainer = searchToggler.parentElement.parentElement;
+function openSearchForm(searchOpener) {
+	var navLinkListContainer = searchOpener.parentElement.parentElement;
 	var navMain = navLinkListContainer.parentElement;
-	if (searchToggler.getAttribute('aria-expanded') === 'false') {
-		// Check if the mobile navigation is open and close it
-		var navLinkListCloser = navLinkListContainer.getElementsByClassName(
-			'nav__link-list-closer'
-		)[0];
-		var navLinkListOpener = navMain.getElementsByClassName(
-			'nav__link-list-opener'
-		)[0];
+	// Check if the mobile navigation is open and close it
+	var navLinkListCloser = navLinkListContainer.getElementsByClassName(
+		'nav__link-list-closer'
+	)[0];
+	var navLinkListOpener = navMain.getElementsByClassName(
+		'nav__link-list-opener'
+	)[0];
 
-		if (
-			navLinkListOpener.getAttribute('aria-expanded') === 'true' &&
-			navLinkListCloser.getAttribute('aria-expanded') === 'true'
-		) {
-			toggleMobileMenu(navLinkListCloser, navLinkListOpener);
-		}
-		// Display the search form
-		var navSearch =
-			navMain.parentElement.getElementsByClassName('nav__search')[0];
-		navSearch.style.display = 'block';
-		// Focus the search input inside the form
-		navSearch.getElementsByClassName('nav__search__input')[0].focus();
-		// Set aria-expanded to true
-		searchToggler.setAttribute('aria-expanded', 'true');
-	} else {
-		// Remove the search form
-		var navSearch =
-			navMain.parentElement.getElementsByClassName('nav__search')[0];
-		navSearch.style.display = 'none';
-		// Set aria-expanded to false
-		searchToggler.setAttribute('aria-expanded', 'false');
+	if (
+		navLinkListOpener.getAttribute('aria-expanded') === 'true' &&
+		navLinkListCloser.getAttribute('aria-expanded') === 'true'
+	) {
+		toggleMobileMenu(navLinkListCloser, navLinkListOpener);
 	}
+	// Display the search form
+	var navSearch =
+		navMain.parentElement.getElementsByClassName('nav__search')[0];
+	navSearch.style.display = 'flex';
+	// Focus the search input inside the form
+	navSearch.getElementsByClassName('nav__search__input')[0].focus();
+	// Set aria-expanded to true
+	searchOpener.setAttribute('aria-expanded', 'true');
+	navSearch
+		.getElementsByClassName('nav__search-closer')[0]
+		.setAttribute('aria-expanded', 'true');
 }
 
-var searchTogglers = document.getElementsByClassName('nav__search-toggler');
+function closeSearchForm(searchCloser) {
+	// Remove the search form
+	var navSearch = searchCloser.parentElement;
+	navSearch.style.display = 'none';
+	// Set aria-expanded to false
+	searchCloser.setAttribute('aria-expanded', 'false');
+	var navMain = navSearch.parentElement.getElementsByClassName('nav-main')[0];
+	navMain
+		.getElementsByClassName('nav__search-opener')[0]
+		.setAttribute('aria-expanded', 'false');
+}
 
-for (var i = 0; i < searchTogglers.length; i++) {
-	var toggler = searchTogglers[i];
-	toggler.addEventListener('click', toggleSearchForm.bind(this, toggler));
+var searchOpeners = document.getElementsByClassName('nav__search-opener');
+var searchClosers = document.getElementsByClassName('nav__search-closer');
+
+for (var i = 0; i < searchOpeners.length; i++) {
+	var opener = searchOpeners[i];
+	opener.addEventListener('click', openSearchForm.bind(this, opener));
+}
+
+for (var i = 0; i < searchClosers.length; i++) {
+	var closer = searchClosers[i];
+	closer.addEventListener('click', closeSearchForm.bind(this, closer));
 }
 
 function toggleEraseButton(inputElement) {

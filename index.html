@@ -45,8 +45,8 @@
 							class="nav__link-list scrollbar-hide"
 						>
 							<button
-								class="nav__link nav__search-toggler"
-								aria-label="Search toggler"
+								class="nav__link nav__search-opener"
+								aria-label="Open search bar"
 								title="Search"
 								aria-controls="search"
 								aria-expanded="false"
@@ -57,7 +57,7 @@
 										alt=""
 									/>
 								</div>
-								<div class="nav__search-toggler__label">
+								<div class="nav__search-opener__label">
 									Search
 								</div>
 							</button>
@@ -80,8 +80,8 @@
 								</div>
 								<small class="nav__link__notification">2</small>
 							</button>
-							<a
-								href="#"
+							<button
+								type="button"
 								class="nav__link"
 								aria-label="Wishlist"
 								data-open="onscreen-wishlist"
@@ -97,9 +97,9 @@
 									</div>
 									<div>Wishlist</div>
 								</div>
-							</a>
-							<a
-								href="#"
+							</button>
+							<button
+								type="button"
 								class="nav__link"
 								aria-label="Coupons"
 								data-open="onscreen-coupons"
@@ -116,7 +116,7 @@
 									<div>Coupons</div>
 								</div>
 								<small class="nav__link__notification">1</small>
-							</a>
+							</button>
 							<div class="flex gap-1">
 								<a href="#" class="btn btn--light-2">Login</a>
 								<a href="#" class="btn btn--light">Register</a>
@@ -155,6 +155,18 @@
 					>
 						<div class="nav__link__icon">
 							<img src="img/icons/search-white.svg" alt="" />
+						</div>
+					</button>
+					<button
+						type="button"
+						class="nav__search-closer"
+						aria-label="Close search bar"
+						title="Close"
+						aria-controls="search"
+						aria-expanded="false"
+					>
+						<div class="nav__link__icon">
+							<img src="img/icons/x-white.svg" alt="" />
 						</div>
 					</button>
 				</form>
