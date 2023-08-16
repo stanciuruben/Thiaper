@@ -166,7 +166,7 @@ table {
 
 @media screen and (max-width: 1920px) {
   .container-hd {
-    max-width: 100%;
+    max-width: auto;
   }
 }
 .w-full {
@@ -948,7 +948,8 @@ table {
   display: block;
 }
 .nav-collections__link[aria-expanded=true] {
-  border-bottom: 3px solid #cbe4de;
+  background-color: #cbe4de;
+  color: #0e8388;
 }
 .nav-collections__brand-list__link {
   display: block;
@@ -1091,7 +1092,7 @@ table {
   width: 1920px;
   height: 100%;
   object-fit: cover;
-  object-position: bottom right;
+  object-position: center center;
   transform: skewX(10deg);
   opacity: 0.5;
 }
@@ -1157,6 +1158,12 @@ table {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1600px) {
+  .hero__img img,
+  .hero--flat__img img {
+    width: 1600px;
+  }
+}
 @media screen and (max-width: 1090px) {
   .hero__img img,
   .hero--flat__img img {

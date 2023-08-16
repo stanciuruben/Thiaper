@@ -328,7 +328,8 @@
 		}
 
 		&__link[aria-expanded='true'] {
-			border-bottom: 3px solid $white;
+			background-color: $white;
+			color: $primary;
 		}
 
 		&__brand-list {

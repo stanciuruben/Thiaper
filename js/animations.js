@@ -49,7 +49,7 @@ for (var i = 0; i < heroElements.length; i++) {
 		id: 'hero-scroll-trigger',
 		end: 'bottom bottom',
 		animation: heroTL,
-		toggleActions: 'play none none forward'
+		toggleActions: 'play none none reverse'
 	});
 }
 
@@ -101,7 +101,7 @@ for (var i = 0; i < heroFlatElements.length; i++) {
 		id: 'hero-flat-scroll-trigger',
 		end: 'bottom bottom',
 		animation: heroFlatTL,
-		toggleActions: 'play none none forward'
+		toggleActions: 'play none none reverse'
 	});
 }
 
@@ -156,7 +156,7 @@ for (var i = 0; i < twoColumnsElements.length; i++) {
 		id: 'two-columns-scroll-trigger',
 		end: 'bottom bottom',
 		animation: twoColumnsTL,
-		toggleActions: 'play none none forward'
+		toggleActions: 'play none none reverse'
 	});
 }
 
@@ -202,7 +202,7 @@ for (var i = 0; i < twoColumnsFlatElements.length; i++) {
 		id: 'two-columns-flat-scroll-trigger',
 		end: 'bottom bottom',
 		animation: twoColumnsFlatTL,
-		toggleActions: 'play none none forward'
+		toggleActions: 'play none none reverse'
 	});
 }
 
@@ -264,7 +264,7 @@ for (var i = 0; i < collectionsGridElements.length; i++) {
 		id: 'collections-grid-scroll-trigger',
 		end: 'bottom bottom',
 		animation: CGTL,
-		toggleActions: 'play none none forward'
+		toggleActions: 'play none none reverse'
 	});
 }
 
@@ -303,7 +303,7 @@ for (var i = 0; i < eMailSubElements.length; i++) {
 		id: 'two-columns-flat-scroll-trigger',
 		end: 'bottom bottom',
 		animation: eMailSubTL,
-		toggleActions: 'play none none forward'
+		toggleActions: 'play none none reverse'
 	});
 }
 
