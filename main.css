@@ -744,6 +744,7 @@ table {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
+  cursor: pointer;
 }
 .nav__link-list-closer[aria-expanded=true] {
   background-color: rgba(0, 0, 0, 0.5);
@@ -1640,6 +1641,7 @@ table {
 .side-modal__closer__icon img {
   width: 1.5rem;
   height: 1.5rem;
+  cursor: pointer;
 }
 .side-modal__content {
   background-color: #2b2b2b;
