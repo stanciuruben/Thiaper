@@ -45,21 +45,20 @@
 							class="nav__link-list scrollbar-hide"
 						>
 							<button
-								class="nav__link nav__search-opener"
+								class="nav__link search-opener"
 								aria-label="Open search bar"
 								title="Search"
+								data-open="search"
 								aria-controls="search"
 								aria-expanded="false"
 							>
-								<div class="nav__link__icon">
+								<div class="search__icon">
 									<img
 										src="img/icons/search-white.svg"
 										alt=""
 									/>
 								</div>
-								<div class="nav__search-opener__label">
-									Search
-								</div>
+								<div class="search-opener__label">Search</div>
 							</button>
 							<button
 								type="button"
@@ -125,52 +124,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- START SEARCH FORM -->
-				<form
-					id="search"
-					class="nav__search"
-					action="javascript:void(0)"
-				>
-					<input
-						type="text"
-						name="search-input"
-						class="nav__search__input"
-						placeholder="Search"
-					/>
-					<button
-						class="nav__search__erase"
-						type="button"
-						aria-label="Erase"
-						title="Erase"
-					>
-						<div class="nav__search__erase__icon">
-							<img src="img/icons/x-white.svg" alt="" />
-						</div>
-					</button>
-					<button
-						class="nav__search__submit"
-						aria-label="Search button"
-						title="Search"
-						type="submit"
-					>
-						<div class="nav__link__icon">
-							<img src="img/icons/search-white.svg" alt="" />
-						</div>
-					</button>
-					<button
-						type="button"
-						class="nav__search-closer"
-						aria-label="Close search bar"
-						title="Close"
-						aria-controls="search"
-						aria-expanded="false"
-					>
-						<div class="nav__link__icon">
-							<img src="img/icons/x-white.svg" alt="" />
-						</div>
-					</button>
-				</form>
-				<!-- END SEARCH FORM -->
 				<div class="nav-collections">
 					<ul
 						id="nav-collections__links"
@@ -1318,6 +1271,73 @@
 					</a>
 				</div>
 			</dialog>
+
+			<dialog id="search" class="search">
+				<div class="container mx-auto">
+					<form class="search__form" action="javascript:void(0)">
+						<input
+							type="text"
+							name="search-input"
+							class="search__input"
+							placeholder="Search for items or collections"
+						/>
+						<button
+							class="search__erase"
+							type="button"
+							aria-label="Erase"
+							title="Erase"
+						>
+							<div class="search__erase__icon">
+								<img src="img/icons/x-white.svg" alt="" />
+							</div>
+						</button>
+						<button
+							class="search__submit"
+							aria-label="Search button"
+							title="Search"
+							type="submit"
+						>
+							<div class="search__icon">
+								<img src="img/icons/search-white.svg" alt="" />
+							</div>
+						</button>
+						<button
+							type="button"
+							class="search-closer"
+							aria-label="Close search bar"
+							title="Close"
+							data-close="search"
+							aria-controls="search"
+							aria-expanded="false"
+						>
+							<div class="search__icon">
+								<img src="img/icons/x-white.svg" alt="" />
+							</div>
+						</button>
+					</form>
+					<dl class="search__results">
+						<dt class="search__results__heading">Most Searched</dt>
+						<dd class="search__results__item">
+							<a href="#">Jeans</a>
+						</dd>
+						<dd class="search__results__item">
+							<a href="#">Sneakers</a>
+						</dd>
+						<dd class="search__results__item">
+							<a href="#">Sun Protection</a>
+						</dd>
+						<dd class="search__results__item">
+							<a href="#">Slippers</a>
+						</dd>
+						<dd class="search__results__item">
+							<a href="#">Earrings</a>
+						</dd>
+						<dd class="search__results__item">
+							<a href="#">T-shirts</a>
+						</dd>
+					</dl>
+				</div>
+			</dialog>
 		</main>
 	</body>
 
@@ -1325,5 +1345,6 @@
 	<script src="js/components/onscreenCart.js"></script>
 	<script src="js/components/onscreenWishlist.js"></script>
 	<script src="js/components/onscreenCoupons.js"></script>
+	<script src="js/components/search.js"></script>
 	<script src="js/animations.js"></script>
 </html>
