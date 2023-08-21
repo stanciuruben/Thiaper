@@ -99,39 +99,36 @@
 		&__left,
 		&__right {
 			position: relative;
-			width: calc(50% - 0.5rem);
+			width: 50%;
 
 			&__content {
 				position: relative;
 				width: 100%;
 				height: 30rem;
 				overflow: hidden;
+				background-color: $bg-primary--light;
 
 				img {
-					width: 100%;
-					height: 100%;
+					position: absolute;
+					top: 2rem;
+					left: 2rem;
+					width: calc(100% - 4rem);
+					height: calc(100% - 4rem);
 					object-fit: cover;
 					object-position: center center;
-					position: absolute;
-					top: 0;
-					left: 0;
-					opacity: 0.5;
-					transition: left 0.4s ease-out, top 0.4s ease-out,
-						width 0.4s ease-out, height 0.4s ease-out;
+					opacity: 0.7;
+					transition: transform 0.4s ease-out, opacity 0.4s ease-out;
 				}
 
 				& .btn.btn--large {
 					position: absolute;
-					bottom: 1rem;
-					left: 50%;
-					transform: translate(-50%);
+					bottom: 4rem;
+					right: 4rem;
 
 					&:hover ~ img,
 					&:focus ~ img {
-						top: -5%;
-						left: -5%;
-						width: 110%;
-						height: 110%;
+						transform: scale(1.2);
+						opacity: 1;
 					}
 				}
 			}
