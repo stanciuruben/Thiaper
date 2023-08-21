@@ -51,16 +51,27 @@ for (var i = 0; i < navLinkListClosers.length; i++) {
 	);
 }
 
-var navMain = document.querySelectorAll('.nav-fixed .nav-main');
+var navMains = document.querySelectorAll('.nav-fixed .nav-main');
+var navAnnouncements = document.querySelectorAll(
+	'.nav-fixed .nav-announcement'
+);
 
 window.addEventListener('scroll', function () {
 	if (window.scrollY > 300) {
-		for (var i = 0; i < navMain.length; i++) {
-			navMain[i].style.padding = '1rem 1.5rem';
+		for (var i = 0; i < navMains.length; i++) {
+			navMains[i].style.padding = '1rem 1.5rem';
+		}
+		for (var i = 0; i < navAnnouncements.length; i++) {
+			navAnnouncements[i].style.height = 0;
+			navAnnouncements[i].style.padding = 0;
 		}
 	} else {
-		for (var i = 0; i < navMain.length; i++) {
-			navMain[i].style.padding = '1.5rem';
+		for (var i = 0; i < navMains.length; i++) {
+			navMains[i].style.padding = '1.5rem';
+		}
+		for (var i = 0; i < navAnnouncements.length; i++) {
+			navAnnouncements[i].style.height = 'auto';
+			navAnnouncements[i].style.padding = '1rem';
 		}
 	}
 });

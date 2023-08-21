@@ -118,6 +118,22 @@
 		}
 	}
 
+	&--light-3 {
+		position: relative;
+		border: 2px solid $white;
+		color: $white;
+		background-color: transparent;
+		z-index: 1;
+		transition: background-color 0.3s ease-out, border-color 0.3s ease-out;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $black;
+			border-color: $black;
+		}
+	}
+
 	&--danger {
 		border: 2px solid $secondary;
 		color: $white;
