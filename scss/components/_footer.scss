@@ -1,5 +1,11 @@
 .footer {
 	background-color: $bg-primary--light;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 4rem;
+	gap: 4rem;
 
 	&__pay-methods {
 		display: flex;
@@ -7,7 +13,7 @@
 		align-items: center;
 		flex-wrap: wrap;
 		justify-content: center;
-		padding: 3rem 1rem;
+		padding: 0 1rem;
 
 		&__item {
 			display: inline-block;
@@ -25,7 +31,6 @@
 		gap: 3rem;
 		justify-content: center;
 		flex-wrap: wrap;
-		margin: 5rem 0;
 		padding: 0 1rem;
 
 		&__item a {
@@ -40,14 +45,15 @@
 	}
 
 	&__grid {
-		margin: 5rem auto;
-		padding: 0 1rem;
 		display: flex;
 		gap: 5rem;
 		flex-wrap: wrap;
-		align-items: center;
+		align-items: start;
+		justify-content: space-between;
+		padding: 0 1rem;
 
 		&__list {
+			min-width: 15rem;
 			color: $white;
 			display: flex;
 			flex-direction: column;
@@ -63,7 +69,7 @@
 
 	&__bottom {
 		background-color: $black;
-		padding: 1rem 0;
+		width: 100%;
 
 		& .container {
 			display: flex;
@@ -112,6 +118,14 @@
 				justify-content: center;
 				flex-wrap: wrap;
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.footer {
+		&__grid {
+			flex-direction: column;
 		}
 	}
 }

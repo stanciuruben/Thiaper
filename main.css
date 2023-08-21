@@ -1390,6 +1390,12 @@ table {
 
 .footer {
   background-color: #2b2b2b;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  gap: 4rem;
 }
 .footer__pay-methods {
   display: flex;
@@ -1397,7 +1403,7 @@ table {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding: 0 1rem;
 }
 .footer__pay-methods__item {
   display: inline-block;
@@ -1412,7 +1418,6 @@ table {
   gap: 3rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 5rem 0;
   padding: 0 1rem;
 }
 .footer__social__item a {
@@ -1424,14 +1429,15 @@ table {
   height: 2rem;
 }
 .footer__grid {
-  margin: 5rem auto;
-  padding: 0 1rem;
   display: flex;
   gap: 5rem;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0 1rem;
 }
 .footer__grid__list {
+  min-width: 15rem;
   color: #cbe4de;
   display: flex;
   flex-direction: column;
@@ -1444,7 +1450,7 @@ table {
 }
 .footer__bottom {
   background-color: #000000;
-  padding: 1rem 0;
+  width: 100%;
 }
 .footer__bottom .container {
   display: flex;
@@ -1481,6 +1487,11 @@ table {
   .footer__bottom__list {
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 590px) {
+  .footer__grid {
+    flex-direction: column;
   }
 }
 .side-modal {
