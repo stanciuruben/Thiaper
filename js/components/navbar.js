@@ -87,6 +87,7 @@ function showCollectionNavigation(link) {
 	}
 
 	link.setAttribute('aria-expanded', 'true');
+	link.focus();
 }
 
 function hideCollectionNavigation(link, parentElement) {
@@ -96,9 +97,20 @@ function hideCollectionNavigation(link, parentElement) {
 	)
 		return;
 	link.setAttribute('aria-expanded', 'false');
+	link.blur();
 }
 
 var collectionLinks = document.getElementsByClassName('nav-collections__link');
+
+function handleCollectionNavigationFocus(link, parentElement) {
+	for (var i = 0; i < collectionLinks.length; i++) {
+		if (link.isEqualNode(collectionLinks[i])) {
+			continue;
+		}
+		hideCollectionNavigation(collectionLinks[i], parentElement);
+	}
+	showCollectionNavigation(link);
+}
 
 for (var i = 0; i < collectionLinks.length; i++) {
 	var currentLink = collectionLinks[i];
@@ -114,97 +126,12 @@ for (var i = 0; i < collectionLinks.length; i++) {
 			currentLink.parentElement
 		)
 	);
+	currentLink.addEventListener(
+		'focusin',
+		handleCollectionNavigationFocus.bind(
+			this,
+			currentLink,
+			currentLink.parentElement
+		)
+	);
 }
-
-var collectionLinksContainers = document.getElementsByClassName(
-	'nav-collections__links'
-);
-var isCollectionLinksInMobileMenu = false;
-
-function displayCollectionLinksInMobileMenu() {
-	if (isCollectionLinksInMobileMenu) return;
-	for (var i = 0; i < collectionLinksContainers.length; i++) {
-		var currentCollectionLinks = collectionLinksContainers[
-			i
-		].getElementsByClassName('nav-collections__link');
-
-		var currentNav =
-			collectionLinksContainers[i].parentElement.parentElement;
-		var currentNavLinkList =
-			currentNav.getElementsByClassName('nav__link-list')[0];
-
-		for (var j = 0; j < currentCollectionLinks.length; j++) {
-			var newLink = document.createElement('a');
-			newLink.className = 'nav__link nav__link--inserted';
-			newLink.href = currentCollectionLinks[j].href;
-			newLink.innerHTML = currentCollectionLinks[j].innerHTML;
-			currentNavLinkList.appendChild(newLink);
-		}
-	}
-	isCollectionLinksInMobileMenu = true;
-}
-
-function removeCollectionLinksFromMobileMenu() {
-	for (var i = 0; i < collectionLinksContainers.length; i++) {
-		var currentNav =
-			collectionLinksContainers[i].parentElement.parentElement;
-		var currentNavLinkList =
-			currentNav.getElementsByClassName('nav__link-list')[0];
-		var insertedLinks = currentNavLinkList.getElementsByClassName(
-			'nav__link--inserted'
-		).length;
-		var firstLength = currentNavLinkList.children.length;
-		while (
-			currentNavLinkList.children.length >
-			firstLength - insertedLinks
-		) {
-			currentNavLinkList.removeChild(currentNavLinkList.lastChild);
-		}
-	}
-	isCollectionLinksInMobileMenu = false;
-}
-
-window.addEventListener('resize', function () {
-	if (window.innerWidth <= 900) {
-		displayCollectionLinksInMobileMenu();
-	} else {
-		removeCollectionLinksFromMobileMenu();
-	}
-});
-
-if (window.innerWidth < 900) {
-	displayCollectionLinksInMobileMenu();
-}
-
-// Brands
-var slidesPerView = 4;
-new Swiper('#swiper-1', {
-	slidesPerView: slidesPerView,
-	speed: 400,
-	spaceBetween: 16,
-	grabCursor: true,
-	navigation: {
-		nextEl: '#swiper-button-next-1',
-		prevEl: '#swiper-button-prev-1'
-	}
-});
-new Swiper('#swiper-2', {
-	slidesPerView: slidesPerView,
-	speed: 400,
-	spaceBetween: 16,
-	grabCursor: true,
-	navigation: {
-		nextEl: '#swiper-button-next-2',
-		prevEl: '#swiper-button-prev-2'
-	}
-});
-new Swiper('#swiper-3', {
-	slidesPerView: slidesPerView,
-	speed: 400,
-	spaceBetween: 16,
-	grabCursor: true,
-	navigation: {
-		nextEl: '#swiper-button-next-3',
-		prevEl: '#swiper-button-prev-3'
-	}
-});

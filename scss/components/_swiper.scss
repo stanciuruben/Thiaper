@@ -3,8 +3,16 @@
 }
 
 .swiper {
-	width: calc(100% - 8rem);
+	width: calc(100% - 6rem);
 	height: 100%;
+
+	&-button-prev {
+		left: 0;
+	}
+
+	&-button-next {
+		right: 0;
+	}
 }
 
 .swiper-slide {
