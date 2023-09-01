@@ -25,10 +25,64 @@
 .overflow-y-hidden {
 	overflow-y: hidden;
 }
+
+// BACKGROUNDS
+.bg-white {
+	background-color: $white;
+}
+.bg-black {
+	background-color: $black;
+}
+.bg-primary {
+	background-color: $primary;
+}
+.bg-secondary {
+	background-color: $secondary;
+}
+.bg-gray {
+	background-color: $gray;
+}
+.bg-lightgray {
+	background-color: $lightgray;
+}
+.bg-darkgray {
+	background-color: $darkgray;
+}
+.bg-bg-primary {
+	background-color: $bg-primary;
+}
+.bg-bg-primary--light {
+	background-color: $bg-primary--light;
+}
+.bg-bg-secondary {
+	background-color: $bg-secondary;
+}
+
 // MARGINS
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
+}
+.m-half {
+	margin: 0.5rem;
+}
+.m-1 {
+	margin: 1rem;
+}
+.m-1half {
+	margin: 1.5rem;
+}
+.m-2 {
+	margin: 2rem;
+}
+.m-2half {
+	margin: 2.5rem;
+}
+.m-3 {
+	margin: 3rem;
+}
+.m-3half {
+	margin: 3.5rem;
 }
 .my-half {
 	margin-top: 0.5rem;
@@ -127,6 +181,127 @@
 }
 .mt-3half {
 	margin-top: 3.5rem;
+}
+
+// PADDINGS
+.p-half {
+	padding: 0.5rem;
+}
+.p-1 {
+	padding: 1rem;
+}
+.p-1half {
+	padding: 1.5rem;
+}
+.p-2 {
+	padding: 2rem;
+}
+.p-2half {
+	padding: 2.5rem;
+}
+.p-3 {
+	padding: 3rem;
+}
+.p-3half {
+	padding: 3.5rem;
+}
+.py-half {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.py-1 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.py-1half {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+.py-2 {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.py-2half {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+}
+.py-3 {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+.py-3half {
+	padding-top: 3.5rem;
+	padding-bottom: 3.5rem;
+}
+.px-half {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+.px-1 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.px-1half {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+.px-2 {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.px-2half {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+.px-3 {
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+.px-3half {
+	padding-left: 3.5rem;
+	padding-right: 3.5rem;
+}
+.pb-half {
+	padding-bottom: 0.5rem;
+}
+.pb-1 {
+	padding-bottom: 1rem;
+}
+.pb-1half {
+	padding-bottom: 1.5rem;
+}
+.pb-2 {
+	padding-bottom: 2rem;
+}
+.pb-2half {
+	padding-bottom: 2.5rem;
+}
+.pb-3 {
+	padding-bottom: 3rem;
+}
+.pb-3half {
+	padding-bottom: 3.5rem;
+}
+.pt-half {
+	padding-top: 0.5rem;
+}
+.pt-1 {
+	padding-top: 1rem;
+}
+.pt-1half {
+	padding-top: 1.5rem;
+}
+.pt-2 {
+	padding-top: 2rem;
+}
+.pt-2half {
+	padding-top: 2.5rem;
+}
+.pt-3 {
+	padding-top: 3rem;
+}
+.pt-3half {
+	padding-top: 3.5rem;
 }
 // POSITIONS
 .fixed {

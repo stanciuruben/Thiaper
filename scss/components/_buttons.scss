@@ -24,6 +24,10 @@
 		pointer-events: none;
 	}
 
+	&--block {
+		display: block;
+	}
+
 	&--primary {
 		position: relative;
 		border: 2px solid $white;
