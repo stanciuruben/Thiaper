@@ -2479,7 +2479,7 @@ table {
   display: block;
   width: 100%;
   height: 25rem;
-  background-color: #161616;
+  background-color: #000000;
 }
 .products-grid__item__link img {
   width: 100%;
@@ -2612,6 +2612,69 @@ table {
   .page-navigation__list {
     gap: 0.5rem;
   }
+}
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+@keyframes colors {
+  0% {
+    stroke: #0e8388;
+  }
+  25% {
+    stroke: #88130e;
+  }
+  50% {
+    stroke: #cbe4de;
+  }
+  75% {
+    stroke: #88130e;
+  }
+  100% {
+    stroke: #0e8388;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+.page-loader {
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.page-loader__animation {
+  animation: rotator 2s linear infinite;
+}
+.page-loader__animation__path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash 2s ease-in-out infinite, colors 8s ease-in-out infinite;
+}
+.page-loader__text {
+  color: #cbe4de;
 }
 
 /*# sourceMappingURL=main.css.map */
