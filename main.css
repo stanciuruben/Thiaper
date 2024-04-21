@@ -117,6 +117,10 @@ section {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1;
   font-family: "Futura", Lato, Helvetica, sans-serif;

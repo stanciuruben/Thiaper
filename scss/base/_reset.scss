@@ -99,9 +99,12 @@ nav,
 section {
 	display: block;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	line-height: 1;
-	font-family: 'Futura', Lato, Helvetica, sans-serif;
+	font-family: "Futura", Lato, Helvetica, sans-serif;
 	background-color: $bg-primary;
 	box-sizing: border-box;
 }
@@ -117,7 +120,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
+	content: "";
 	content: none;
 }
 table {
