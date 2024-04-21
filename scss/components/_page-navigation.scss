@@ -1,0 +1,43 @@
+.page-navigation {
+	display: block;
+	margin: 3rem 0;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	&__link,
+	&__link:visited,
+	&__link:link,
+	&__link:active {
+		text-decoration: none;
+		color: $white;
+		background-color: $bg-primary--light;
+		padding: 1rem;
+		border-radius: 0.375rem;
+
+		&:hover {
+			background-color: $white;
+			color: $black;
+		}
+	}
+
+	&__link--active,
+	&__link--active:visited,
+	&__link--active:link,
+	&__link--active:active {
+		color: $white;
+		background-color: $gray;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.page-navigation {
+		&__list {
+			gap: 0.5rem;
+		}
+	}
+}
