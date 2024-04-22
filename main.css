@@ -2643,8 +2643,21 @@ table {
   }
 }
 @media screen and (max-width: 480px) {
+  .products-grid {
+    padding: 0 0.5rem;
+    gap: 0.5rem;
+  }
   .products-grid__item {
-    width: 100%;
+    width: calc((100% - 0.5rem) / 2);
+  }
+  .products-grid__item__link {
+    height: 18rem;
+  }
+  .products-grid__item__info {
+    gap: 0.375rem;
+  }
+  .products-grid__item__info__brand {
+    padding: 0.375rem 0;
   }
 }
 .page-navigation {
