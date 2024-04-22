@@ -32,8 +32,19 @@
 
 		<main class="relative container-hd mx-auto overflow-x-hidden">
 			<nav class="nav container-hd mx-auto">
+				<div class="nav-announcement">
+					<p class="nav-announcement__text">
+						60% Off the old season starting form next week
+					</p>
+					<a
+						href="/pages/collection.html"
+						class="btn btn--light-3 btn--block nav-announcement__cta"
+					>
+						Shop Now
+					</a>
+				</div>
 				<div class="nav-main">
-					<a href="#" class="nav__logo">Thiaper</a>
+					<a href="/" class="nav__logo">Thiaper</a>
 					<button
 						type="button"
 						class="nav__link-list-opener"
@@ -42,7 +53,7 @@
 						aria-label="Open mobile navigation"
 					>
 						<img
-							src="../img/icons/hamburger-white.svg"
+							src="/img/icons/hamburger-white.svg"
 							alt="Hamburger icon"
 						/>
 					</button>
@@ -57,7 +68,7 @@
 							aria-expanded="false"
 							aria-label="Close mobile navigation"
 						>
-							<img src="../img/icons/x-white.svg" alt="X icon" />
+							<img src="/img/icons/x-white.svg" alt="X icon" />
 						</button>
 						<div
 							id="nav__link-list"
@@ -73,7 +84,7 @@
 							>
 								<div class="search__icon">
 									<img
-										src="../img/icons/search-white.svg"
+										src="/img/icons/search-white.svg"
 										alt=""
 									/>
 								</div>
@@ -90,7 +101,7 @@
 								<div class="flex gap-half">
 									<div class="nav__link__icon">
 										<img
-											src="../img/icons/shopping-bag-white.svg"
+											src="/img/icons/shopping-bag-white.svg"
 											alt=""
 										/>
 									</div>
@@ -109,7 +120,7 @@
 								<div class="flex gap-half">
 									<div class="nav__link__icon">
 										<img
-											src="../img/icons/heart-icon-white.svg"
+											src="/img/icons/heart-icon-white.svg"
 											alt=""
 										/>
 									</div>
@@ -127,7 +138,7 @@
 								<div class="flex gap-half">
 									<div class="nav__link__icon">
 										<img
-											src="../img/icons/discount-icon-white.svg"
+											src="/img/icons/discount-icon-white.svg"
 											alt=""
 										/>
 									</div>
@@ -136,26 +147,49 @@
 								<small class="nav__link__notification">1</small>
 							</button>
 							<div class="flex gap-1">
-								<a href="#" class="btn btn--light-2">Login</a>
-								<a href="#" class="btn btn--light">Register</a>
+								<a
+									href="/pages/login.html"
+									class="btn btn--light-2"
+									>Login</a
+								>
+								<a
+									href="/pages/register.html"
+									class="btn btn--light"
+									>Register</a
+								>
 							</div>
 							<div class="nav__link-list__mobile-only">
 								<h5 class="nav__link-list__title">
 									Collections
 								</h5>
-								<a class="nav__link nav__link" href="#">
+								<a
+									class="nav__link nav__link"
+									href="/pages/collection.html"
+								>
 									Men
 								</a>
-								<a class="nav__link nav__link" href="#">
+								<a
+									class="nav__link nav__link"
+									href="/pages/collection.html"
+								>
 									Women
 								</a>
-								<a class="nav__link nav__link" href="#">
+								<a
+									class="nav__link nav__link"
+									href="/pages/collection.html"
+								>
 									Clothes
 								</a>
-								<a class="nav__link nav__link" href="#">
+								<a
+									class="nav__link nav__link"
+									href="/pages/collection.html"
+								>
 									Shoes
 								</a>
-								<a class="nav__link nav__link" href="#">
+								<a
+									class="nav__link nav__link"
+									href="/pages/collection.html"
+								>
 									Accessories
 								</a>
 							</div>
@@ -168,131 +202,59 @@
 						class="nav-collections__links"
 					>
 						<li>
-							<a href="#" class="nav-collections__link"> Men </a>
-						</li>
-						<li>
-							<a href="#" class="nav-collections__link">
-								Women
-							</a>
-						</li>
-						<li>
 							<a
-								href="#"
+								href="/pages/collection.html"
 								class="nav-collections__link"
 								aria-controls="nav-collections__list-1"
 								aria-expanded="false"
 							>
-								Clothes
+								New Collection
 							</a>
 							<div
 								id="nav-collections__list-1"
-								class="nav-collections__list"
+								class="nav-collections__list nav-collections__list--primary"
 							>
-								<div
-									class="container mx-auto relative mb-1half"
-								>
-									<div class="relative h-2half">
-										<div class="swiper" id="swiper-1">
-											<div
-												class="swiper-wrapper nav-collections__brand-list"
-											>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>D'Amore</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Dickens</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Orn</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Predovic-Ferry</a
-													>
-												</div>
-											</div>
-										</div>
-										<div
-											id="swiper-button-prev-1"
-											class="swiper-button-prev nav-collections__brand-list__controller"
-										></div>
-										<div
-											id="swiper-button-next-1"
-											class="swiper-button-next nav-collections__brand-list__controller"
-										></div>
-									</div>
-								</div>
-								<div class="container flex gap-1half mx-auto">
-									<a
-										href="#"
-										class="nav-collections__list__showcase"
-									>
-										<img
-											class="nav-collections__list__showcase__img"
-											src="../img/placeholder/summer-outfit.jpg"
-											alt=""
-										/>
-										<button
-											type="button"
-											class="nav-collections__list__showcase__link btn btn--success"
-										>
-											Shop Now
-										</button>
-									</a>
+								<div class="container flex gap-1 mx-auto">
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
-												href="#"
-												class="nav-collections__list__sublist__link"
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
 											>
 												Casual
 											</a>
 										</dt>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Brand T-shirts</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Long sleeve shirts</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Chinos</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Cargo Pants</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Skirts</a
 											>
@@ -301,239 +263,504 @@
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
-												href="#"
-												class="nav-collections__list__sublist__link"
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
 											>
 												Sport
 											</a>
 										</dt>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>T-shirts</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Sweatshirts</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Shorts</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Bike Shorts</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Rain Jackets</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Training Socks</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Swimsuits</a
 											>
 										</dd>
 									</dl>
+									<dl class="nav-collections__list__sublist">
+										<dt>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
+											>
+												Formal
+											</a>
+										</dt>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Shirts</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Shorts</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Suits</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Socks</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Jackets</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Business Shoes</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Pullovers</a
+											>
+										</dd>
+									</dl>
+									<a
+										href="/pages/collection.html"
+										class="nav-collections__list__showcase"
+									>
+										<img
+											class="nav-collections__list__showcase__img"
+											src="/img/placeholder/summer-outfit-1.jpg"
+											alt=""
+										/>
+										<p class="text-white mt-1">
+											Dress up for a Perfect Summer
+										</p>
+									</a>
 								</div>
 							</div>
 						</li>
 						<li>
 							<a
-								href="#"
+								href="/pages/collection.html"
 								class="nav-collections__link"
 								aria-controls="nav-collections__list-2"
+								aria-expanded="false"
+							>
+								Beauty
+							</a>
+							<div
+								id="nav-collections__list-2"
+								class="nav-collections__list nav-collections__list--secondary"
+							>
+								<div class="container flex gap-1 mx-auto">
+									<dl class="nav-collections__list__sublist">
+										<dt>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
+											>
+												Beauty
+											</a>
+										</dt>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Parfumes</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Shaving</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Facial Care</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Body Care</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Hair Care</a
+											>
+										</dd>
+									</dl>
+									<dl class="nav-collections__list__sublist">
+										<dt>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
+											>
+												Highlights
+											</a>
+										</dt>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>New Comings</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Grooming</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Home Spa</a
+											>
+										</dd>
+									</dl>
+									<a
+										href="/pages/collection.html"
+										class="nav-collections__list__showcase"
+									>
+										<img
+											class="nav-collections__list__showcase__img"
+											src="/img/placeholder/mask.jpg"
+											alt=""
+										/>
+										<p class="text-white mt-1">
+											Shine like the Sun
+										</p>
+									</a>
+									<a
+										href="/pages/collection.html"
+										class="nav-collections__list__showcase"
+									>
+										<img
+											class="nav-collections__list__showcase__img"
+											src="/img/placeholder/parfume.jpg"
+											alt=""
+										/>
+										<p class="text-white mt-1">
+											New Fragrances
+										</p>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a
+								href="/pages/collection.html"
+								class="nav-collections__link"
+								aria-controls="nav-collections__list-3"
+								aria-expanded="false"
+							>
+								Clothes
+							</a>
+							<div
+								id="nav-collections__list-3"
+								class="nav-collections__list nav-collections__list--gray"
+							>
+								<div class="container flex gap-1 mx-auto">
+									<dl class="nav-collections__list__sublist">
+										<dt>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
+											>
+												Casual
+											</a>
+										</dt>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Brand T-shirts</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Long sleeve shirts</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Chinos</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Cargo Pants</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Skirts</a
+											>
+										</dd>
+									</dl>
+									<dl class="nav-collections__list__sublist">
+										<dt>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
+											>
+												Sport
+											</a>
+										</dt>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>T-shirts</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Sweatshirts</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Shorts</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Bike Shorts</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Rain Jackets</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Training Socks</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Swimsuits</a
+											>
+										</dd>
+									</dl>
+									<dl class="nav-collections__list__sublist">
+										<dt>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
+											>
+												Formal
+											</a>
+										</dt>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Shirts</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Shorts</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Suits</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Socks</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Jackets</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Business Shoes</a
+											>
+										</dd>
+										<dd>
+											<a
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__link"
+												>Pullovers</a
+											>
+										</dd>
+									</dl>
+									<a
+										href="/pages/collection.html"
+										class="nav-collections__list__showcase"
+									>
+										<img
+											class="nav-collections__list__showcase__img"
+											src="/img/placeholder/summer-outfit.jpg"
+											alt=""
+										/>
+										<p class="text-white mt-1">
+											Perfect T-Shirts for a Perfect
+											Summer
+										</p>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a
+								href="/pages/collection.html"
+								class="nav-collections__link"
+								aria-controls="nav-collections__list-4"
 								aria-expanded="false"
 							>
 								Shoes
 							</a>
 							<div
-								id="nav-collections__list-2"
-								class="nav-collections__list"
+								id="nav-collections__list-4"
+								class="nav-collections__list nav-collections__list--black"
 							>
-								<div
-									class="container mx-auto relative mb-1half"
-								>
-									<div class="relative h-2half">
-										<div class="swiper" id="swiper-2">
-											<div
-												class="swiper-wrapper nav-collections__brand-list"
-											>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Hauck</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Kunde</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Kulas</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Gutmann</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Feil</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Gislason</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Bode</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>O'Hara</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>D'Amore</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Dickens</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Orn</a
-													>
-												</div>
-												<div class="swiper-slide">
-													<a
-														class="nav-collections__brand-list__link"
-														href="#"
-														>Predovic-Ferry</a
-													>
-												</div>
-											</div>
-										</div>
-										<div
-											id="swiper-button-prev-2"
-											class="swiper-button-prev nav-collections__brand-list__controller"
-										></div>
-										<div
-											id="swiper-button-next-2"
-											class="swiper-button-next nav-collections__brand-list__controller"
-										></div>
-									</div>
-								</div>
 								<div class="container flex gap-1half mx-auto">
-									<a
-										href="#"
-										class="nav-collections__list__showcase"
-									>
-										<img
-											class="nav-collections__list__showcase__img"
-											src="../img/placeholder/golden-boots.jpg"
-											alt=""
-										/>
-										<button
-											type="button"
-											class="nav-collections__list__showcase__link btn btn--success"
-										>
-											Shop Now
-										</button>
-									</a>
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
-												href="#"
-												class="nav-collections__list__sublist__link"
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
 											>
 												Sneakers
 											</a>
 										</dt>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Low Top</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>High Top</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Big Brands</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Jordans</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Trainers</a
 											>
@@ -542,43 +769,43 @@
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
-												href="#"
-												class="nav-collections__list__sublist__link"
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
 											>
 												Business shoes
 											</a>
 										</dt>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Mocasins</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Schnurschuhe</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Boots</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Big sole</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Small sole</a
 											>
@@ -589,80 +816,65 @@
 						</li>
 						<li>
 							<a
-								href="#"
+								href="/pages/collection.html"
 								class="nav-collections__link"
-								aria-controls="nav-collections__list-3"
+								aria-controls="nav-collections__list-5"
 								aria-expanded="false"
 							>
 								Accessories
 							</a>
 							<div
-								id="nav-collections__list-3"
-								class="nav-collections__list"
+								id="nav-collections__list-5"
+								class="nav-collections__list nav-collections__list--darkgray"
 							>
 								<div class="container flex gap-1half mx-auto">
-									<div
-										class="nav-collections__list__showcase"
-									>
-										<img
-											class="nav-collections__list__showcase__img"
-											src="../img/placeholder/accessories.jpg"
-											alt=""
-										/>
-										<a
-											href="#"
-											class="nav-collections__list__showcase__link btn btn--success"
-										>
-											Shop Now
-										</a>
-									</div>
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
-												href="#"
-												class="nav-collections__list__sublist__link"
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
 											>
 												Watches
 											</a>
 										</dt>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Belt</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Bracelet</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Sport</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Smart Watches</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Mechanink</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Big Brands</a
 											>
@@ -671,36 +883,36 @@
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
-												href="#"
-												class="nav-collections__list__sublist__link"
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
 											>
 												Jewellery
 											</a>
 										</dt>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Bracelets</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Chains</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Rings</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Earrings</a
 											>
@@ -709,36 +921,36 @@
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
-												href="#"
-												class="nav-collections__list__sublist__link"
+												href="/pages/collection.html"
+												class="nav-collections__list__sublist__title"
 											>
 												Belts
 											</a>
 										</dt>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Leather</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Sinthetic Leather</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Sport</a
 											>
 										</dd>
 										<dd>
 											<a
-												href="#"
+												href="/pages/collection.html"
 												class="nav-collections__list__sublist__link"
 												>Big Brands</a
 											>

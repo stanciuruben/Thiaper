@@ -1589,13 +1589,13 @@ table {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #88130e;
+  background-color: #814745;
   gap: 1rem;
   overflow: hidden;
   transition: height 0.4s ease-out, padding 0.4s ease-out;
 }
 .nav-announcement__text {
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #cbe4de;
   text-transform: uppercase;
   text-align: center;
@@ -1709,56 +1709,115 @@ table {
   border-radius: 0.5rem;
 }
 .nav-collections__links {
+  position: relative;
   display: flex;
-  background-color: #0e8388;
+  align-items: start;
+  background-color: #000000;
   padding: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.nav-collections__links:hover, .nav-collections__links:focus-within {
+  background-color: transparent;
 }
 .nav-collections__list {
   display: none;
   position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem;
-  background-color: #cbe4de;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding: 5rem 1rem;
+  pointer-events: auto;
+  z-index: -1;
+}
+.nav-collections__list--primary {
+  background-color: #507779;
+}
+.nav-collections__list--secondary {
+  background-color: #814745;
+}
+.nav-collections__list--gray {
+  background-color: #75817e;
+}
+.nav-collections__list--darkgray {
+  background-color: #393e3d;
+}
+.nav-collections__list--black {
+  background-color: #000000;
 }
 .nav-collections__list__sublist {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .nav-collections__list__sublist dt {
+  margin-bottom: 1rem;
+}
+.nav-collections__list__sublist__title, .nav-collections__list__sublist__title:link, .nav-collections__list__sublist__title:visited, .nav-collections__list__sublist__title:active {
+  position: relative;
+  text-decoration: none;
+  color: #cbe4de;
+  font-size: 1.2rem;
   font-weight: 700;
-  font-size: 20px;
-  color: #000000;
+  padding: 0.5rem 0;
+}
+.nav-collections__list__sublist__title::after, .nav-collections__list__sublist__title:link::after, .nav-collections__list__sublist__title:visited::after, .nav-collections__list__sublist__title:active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+.nav-collections__list__sublist__title:focus, .nav-collections__list__sublist__title:focus-visible, .nav-collections__list__sublist__title:focus-within, .nav-collections__list__sublist__title:hover, .nav-collections__list__sublist__title:link:focus, .nav-collections__list__sublist__title:link:focus-visible, .nav-collections__list__sublist__title:link:focus-within, .nav-collections__list__sublist__title:link:hover, .nav-collections__list__sublist__title:visited:focus, .nav-collections__list__sublist__title:visited:focus-visible, .nav-collections__list__sublist__title:visited:focus-within, .nav-collections__list__sublist__title:visited:hover, .nav-collections__list__sublist__title:active:focus, .nav-collections__list__sublist__title:active:focus-visible, .nav-collections__list__sublist__title:active:focus-within, .nav-collections__list__sublist__title:active:hover {
+  outline: none;
+}
+.nav-collections__list__sublist__title:focus::after, .nav-collections__list__sublist__title:focus-visible::after, .nav-collections__list__sublist__title:focus-within::after, .nav-collections__list__sublist__title:hover::after, .nav-collections__list__sublist__title:link:focus::after, .nav-collections__list__sublist__title:link:focus-visible::after, .nav-collections__list__sublist__title:link:focus-within::after, .nav-collections__list__sublist__title:link:hover::after, .nav-collections__list__sublist__title:visited:focus::after, .nav-collections__list__sublist__title:visited:focus-visible::after, .nav-collections__list__sublist__title:visited:focus-within::after, .nav-collections__list__sublist__title:visited:hover::after, .nav-collections__list__sublist__title:active:focus::after, .nav-collections__list__sublist__title:active:focus-visible::after, .nav-collections__list__sublist__title:active:focus-within::after, .nav-collections__list__sublist__title:active:hover::after {
+  background-color: #cbe4de;
 }
 .nav-collections__list__sublist__link, .nav-collections__list__sublist__link:link, .nav-collections__list__sublist__link:visited, .nav-collections__list__sublist__link:active {
-  color: #000000;
+  position: relative;
+  color: #cbe4de;
   text-decoration: none;
   background-color: transparent;
   display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding: 0.5rem 0;
 }
-.nav-collections__list__sublist__link:hover, .nav-collections__list__sublist__link:link:hover, .nav-collections__list__sublist__link:visited:hover, .nav-collections__list__sublist__link:active:hover {
-  text-decoration: underline;
+.nav-collections__list__sublist__link::after, .nav-collections__list__sublist__link:link::after, .nav-collections__list__sublist__link:visited::after, .nav-collections__list__sublist__link:active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+.nav-collections__list__sublist__link:focus, .nav-collections__list__sublist__link:focus-visible, .nav-collections__list__sublist__link:focus-within, .nav-collections__list__sublist__link:hover, .nav-collections__list__sublist__link:link:focus, .nav-collections__list__sublist__link:link:focus-visible, .nav-collections__list__sublist__link:link:focus-within, .nav-collections__list__sublist__link:link:hover, .nav-collections__list__sublist__link:visited:focus, .nav-collections__list__sublist__link:visited:focus-visible, .nav-collections__list__sublist__link:visited:focus-within, .nav-collections__list__sublist__link:visited:hover, .nav-collections__list__sublist__link:active:focus, .nav-collections__list__sublist__link:active:focus-visible, .nav-collections__list__sublist__link:active:focus-within, .nav-collections__list__sublist__link:active:hover {
+  outline: none;
+}
+.nav-collections__list__sublist__link:focus::after, .nav-collections__list__sublist__link:focus-visible::after, .nav-collections__list__sublist__link:focus-within::after, .nav-collections__list__sublist__link:hover::after, .nav-collections__list__sublist__link:link:focus::after, .nav-collections__list__sublist__link:link:focus-visible::after, .nav-collections__list__sublist__link:link:focus-within::after, .nav-collections__list__sublist__link:link:hover::after, .nav-collections__list__sublist__link:visited:focus::after, .nav-collections__list__sublist__link:visited:focus-visible::after, .nav-collections__list__sublist__link:visited:focus-within::after, .nav-collections__list__sublist__link:visited:hover::after, .nav-collections__list__sublist__link:active:focus::after, .nav-collections__list__sublist__link:active:focus-visible::after, .nav-collections__list__sublist__link:active:focus-within::after, .nav-collections__list__sublist__link:active:hover::after {
+  background-color: #cbe4de;
 }
 .nav-collections__list__showcase {
   position: relative;
-  width: 20rem;
-  height: 20rem;
+  display: block;
+  width: 15rem;
+  height: auto;
+  text-decoration: none;
 }
 .nav-collections__list__showcase__img {
   width: 100%;
-  height: 100%;
+  height: 20rem;
   object-fit: cover;
   object-position: center center;
 }
-.nav-collections__list__showcase__link {
-  display: block;
-  position: absolute;
-  bottom: 1rem;
-  right: -1rem;
-}
 .nav-collections__link, .nav-collections__link:link, .nav-collections__link:visited, .nav-collections__link:active {
+  position: relative;
   color: #cbe4de;
   text-decoration: none;
   background-color: transparent;
@@ -1766,16 +1825,28 @@ table {
   border: none;
   cursor: pointer;
   padding: 1rem 1.5rem;
-  font-weight: 600;
+  font-weight: 200;
+  font-size: 1.1rem;
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+  pointer-events: auto;
+}
+.nav-collections__link::after, .nav-collections__link:link::after, .nav-collections__link:visited::after, .nav-collections__link:active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+.nav-collections__link:focus, .nav-collections__link:focus-visible, .nav-collections__link:focus-within, .nav-collections__link:hover, .nav-collections__link[aria-expanded=true], .nav-collections__link:link:focus, .nav-collections__link:link:focus-visible, .nav-collections__link:link:focus-within, .nav-collections__link:link:hover, .nav-collections__link:link[aria-expanded=true], .nav-collections__link:visited:focus, .nav-collections__link:visited:focus-visible, .nav-collections__link:visited:focus-within, .nav-collections__link:visited:hover, .nav-collections__link:visited[aria-expanded=true], .nav-collections__link:active:focus, .nav-collections__link:active:focus-visible, .nav-collections__link:active:focus-within, .nav-collections__link:active:hover, .nav-collections__link:active[aria-expanded=true] {
+  outline: none;
+}
+.nav-collections__link:focus::after, .nav-collections__link:focus-visible::after, .nav-collections__link:focus-within::after, .nav-collections__link:hover::after, .nav-collections__link[aria-expanded=true]::after, .nav-collections__link:link:focus::after, .nav-collections__link:link:focus-visible::after, .nav-collections__link:link:focus-within::after, .nav-collections__link:link:hover::after, .nav-collections__link:link[aria-expanded=true]::after, .nav-collections__link:visited:focus::after, .nav-collections__link:visited:focus-visible::after, .nav-collections__link:visited:focus-within::after, .nav-collections__link:visited:hover::after, .nav-collections__link:visited[aria-expanded=true]::after, .nav-collections__link:active:focus::after, .nav-collections__link:active:focus-visible::after, .nav-collections__link:active:focus-within::after, .nav-collections__link:active:hover::after, .nav-collections__link:active[aria-expanded=true]::after {
+  background-color: #cbe4de;
 }
 .nav-collections__link[aria-expanded=true] ~ .nav-collections__list {
   display: block;
-}
-.nav-collections__link[aria-expanded=true] {
-  background-color: #cbe4de;
-  color: #0e8388;
 }
 .nav-collections__brand-list__link {
   display: block;
@@ -1834,15 +1905,9 @@ table {
     left: calc(50% - 960px);
   }
 }
-@media screen and (max-width: 1090px) {
-  .nav-collections__list__showcase {
-    width: 15rem;
-    height: 15rem;
-  }
-}
 @media screen and (max-width: 900px) {
   .nav-announcement__text {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .nav__link-list {
     width: 18rem;
