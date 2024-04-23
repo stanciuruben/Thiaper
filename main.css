@@ -1973,11 +1973,6 @@ table {
   justify-content: end;
   gap: 1rem;
 }
-.options__label {
-  color: #cbe4de;
-  white-space: nowrap;
-  font-size: 16px;
-}
 .options__link {
   color: #cbe4de;
   display: flex;
@@ -1997,6 +1992,15 @@ table {
   object-position: center center;
 }
 .options__sort {
+  position: relative;
+}
+.options__sort__label {
+  color: #8b9b97;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.options__sort__list {
   display: block;
   width: 100%;
   min-width: 10rem;
@@ -2005,11 +2009,15 @@ table {
   appearance: none;
   outline: 0;
   border: none;
-  padding: 0.375rem;
+  padding-left: 4rem;
+  padding-right: 0.375rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
   border-radius: 0.375rem;
   font-size: 16px;
-  background-color: #cbe4de;
-  color: #000000;
+  background: #161616;
+  color: #cbe4de;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1280px) {
@@ -2021,7 +2029,7 @@ table {
   .options {
     flex-direction: column;
   }
-  .options__left, .options__right {
+  .options__left, .options__right, .options__sort {
     width: 100%;
   }
 }
@@ -2554,7 +2562,6 @@ table {
   transition: opacity 0.4s ease-out;
 }
 .products-grid__item__link__text {
-  content: "View More";
   display: none;
   position: absolute;
   display: flex;
