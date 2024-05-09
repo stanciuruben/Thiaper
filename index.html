@@ -63,7 +63,7 @@
 					>
 						<button
 							type="button"
-							class="nav__link-list-closer"
+							class="nav__link-list-closer nav-collections__closer"
 							aria-controls="nav__link-list-container"
 							aria-expanded="false"
 							aria-label="Close mobile navigation"
@@ -74,124 +74,162 @@
 							id="nav__link-list"
 							class="nav__link-list scrollbar-hide"
 						>
-							<button
-								class="nav__link search-opener"
-								aria-label="Open search bar"
-								title="Search"
-								data-open="search"
-								aria-controls="search"
-								aria-expanded="false"
-							>
-								<div class="search__icon">
-									<img
-										src="/img/icons/search-white.svg"
-										alt=""
-									/>
-								</div>
-								<div class="search-opener__label">Search</div>
-							</button>
-							<button
-								type="button"
-								class="nav__link"
-								aria-label="Cart"
-								data-open="onscreen-cart"
-								aria-controls="onscreen-cart"
-								aria-expanded="false"
-							>
-								<div class="flex gap-half">
-									<div class="nav__link__icon">
+							<div class="nav__link-list__main">
+								<button
+									class="nav__link search-opener"
+									aria-label="Open search bar"
+									title="Search"
+									data-open="search"
+									aria-controls="search"
+									aria-expanded="false"
+								>
+									<div class="search__icon">
 										<img
-											src="/img/icons/shopping-bag-white.svg"
+											src="/img/icons/search-white.svg"
 											alt=""
 										/>
 									</div>
-									<div>Cart</div>
+									<div class="search-opener__label">
+										Search
+									</div>
+								</button>
+								<button
+									type="button"
+									class="nav__link"
+									aria-label="Cart"
+									data-open="onscreen-cart"
+									aria-controls="onscreen-cart"
+									aria-expanded="false"
+								>
+									<div class="flex gap-half">
+										<div class="nav__link__icon">
+											<img
+												src="/img/icons/shopping-bag-white.svg"
+												alt=""
+											/>
+										</div>
+										<div>Cart</div>
+									</div>
+									<small class="nav__link__notification"
+										>2</small
+									>
+								</button>
+								<button
+									type="button"
+									class="nav__link"
+									aria-label="Wishlist"
+									data-open="onscreen-wishlist"
+									aria-controls="onscreen-wishlist"
+									aria-expanded="false"
+								>
+									<div class="flex gap-half">
+										<div class="nav__link__icon">
+											<img
+												src="/img/icons/heart-icon-white.svg"
+												alt=""
+											/>
+										</div>
+										<div>Wishlist</div>
+									</div>
+								</button>
+								<button
+									type="button"
+									class="nav__link"
+									aria-label="Coupons"
+									data-open="onscreen-coupons"
+									aria-controls="onscreen-coupons"
+									aria-expanded="false"
+								>
+									<div class="flex gap-half">
+										<div class="nav__link__icon">
+											<img
+												src="/img/icons/discount-icon-white.svg"
+												alt=""
+											/>
+										</div>
+										<div>Coupons</div>
+									</div>
+									<small class="nav__link__notification"
+										>1</small
+									>
+								</button>
+								<div class="flex gap-1">
+									<a
+										href="/pages/login.html"
+										class="btn btn--light-2"
+										>Login</a
+									>
+									<a
+										href="/pages/register.html"
+										class="btn btn--light"
+										>Register</a
+									>
 								</div>
-								<small class="nav__link__notification">2</small>
-							</button>
-							<button
-								type="button"
-								class="nav__link"
-								aria-label="Wishlist"
-								data-open="onscreen-wishlist"
-								aria-controls="onscreen-wishlist"
-								aria-expanded="false"
-							>
-								<div class="flex gap-half">
-									<div class="nav__link__icon">
+								<div class="nav__mobile-only">
+									<h5 class="nav__link-list__title">
+										Collections
+									</h5>
+									<button
+										type="button"
+										class="nav-collections__opener nav__btn-with-icon"
+										aria-expanded="false"
+										aria-controls="nav-collections__list-1"
+									>
+										New Collection
 										<img
-											src="/img/icons/heart-icon-white.svg"
+											src="/img/icons/chev-right-white.svg"
 											alt=""
 										/>
-									</div>
-									<div>Wishlist</div>
-								</div>
-							</button>
-							<button
-								type="button"
-								class="nav__link"
-								aria-label="Coupons"
-								data-open="onscreen-coupons"
-								aria-controls="onscreen-coupons"
-								aria-expanded="false"
-							>
-								<div class="flex gap-half">
-									<div class="nav__link__icon">
+									</button>
+									<button
+										type="button"
+										class="nav-collections__opener nav__btn-with-icon"
+										aria-expanded="false"
+										aria-controls="nav-collections__list-2"
+									>
+										Beauty
 										<img
-											src="/img/icons/discount-icon-white.svg"
+											src="/img/icons/chev-right-white.svg"
 											alt=""
 										/>
-									</div>
-									<div>Coupons</div>
+									</button>
+									<button
+										type="button"
+										class="nav-collections__opener nav__btn-with-icon"
+										aria-expanded="false"
+										aria-controls="nav-collections__list-3"
+									>
+										Clothes
+										<img
+											src="/img/icons/chev-right-white.svg"
+											alt=""
+										/>
+									</button>
+									<button
+										type="button"
+										class="nav-collections__opener nav__btn-with-icon"
+										aria-expanded="false"
+										aria-controls="nav-collections__list-4"
+									>
+										Shoes
+										<img
+											src="/img/icons/chev-right-white.svg"
+											alt=""
+										/>
+									</button>
+									<button
+										type="button"
+										class="nav-collections__opener nav__btn-with-icon"
+										aria-expanded="false"
+										aria-controls="nav-collections__list-5"
+									>
+										Accessories
+										<img
+											src="/img/icons/chev-right-white.svg"
+											alt=""
+										/>
+									</button>
 								</div>
-								<small class="nav__link__notification">1</small>
-							</button>
-							<div class="flex gap-1">
-								<a
-									href="/pages/login.html"
-									class="btn btn--light-2"
-									>Login</a
-								>
-								<a
-									href="/pages/register.html"
-									class="btn btn--light"
-									>Register</a
-								>
-							</div>
-							<div class="nav__link-list__mobile-only">
-								<h5 class="nav__link-list__title">
-									Collections
-								</h5>
-								<a
-									class="nav__link nav__link"
-									href="/pages/collection.html"
-								>
-									New Collection
-								</a>
-								<a
-									class="nav__link nav__link"
-									href="/pages/collection.html"
-								>
-									Beauty
-								</a>
-								<a
-									class="nav__link nav__link"
-									href="/pages/collection.html"
-								>
-									Clothes
-								</a>
-								<a
-									class="nav__link nav__link"
-									href="/pages/collection.html"
-								>
-									Shoes
-								</a>
-								<a
-									class="nav__link nav__link"
-									href="/pages/collection.html"
-								>
-									Accessories
-								</a>
 							</div>
 						</div>
 					</div>
@@ -212,9 +250,25 @@
 							</a>
 							<div
 								id="nav-collections__list-1"
-								class="nav-collections__list nav-collections__list--primary"
+								class="nav-collections__list nav-collections__list--primary scrollbar-hide"
 							>
-								<div class="container flex gap-1 mx-auto">
+								<div class="nav-collections__list__inner">
+									<button
+										class="nav__link nav-collections__closer nav__mobile-only mb-2"
+										type="button"
+									>
+										<div
+											class="flex gap-half align-items-center"
+										>
+											<div class="nav__link__icon">
+												<img
+													src="/img/icons/chev-left-white.svg"
+													alt=""
+												/>
+											</div>
+											<div>Close</div>
+										</div>
+									</button>
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
@@ -405,9 +459,25 @@
 							</a>
 							<div
 								id="nav-collections__list-2"
-								class="nav-collections__list nav-collections__list--secondary"
+								class="nav-collections__list nav-collections__list--secondary scrollbar-hide"
 							>
-								<div class="container flex gap-1 mx-auto">
+								<div class="nav-collections__list__inner">
+									<button
+										class="nav__link nav-collections__closer nav__mobile-only mb-2"
+										type="button"
+									>
+										<div
+											class="flex gap-half align-items-center"
+										>
+											<div class="nav__link__icon">
+												<img
+													src="/img/icons/chev-left-white.svg"
+													alt=""
+												/>
+											</div>
+											<div>Close</div>
+										</div>
+									</button>
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
@@ -524,9 +594,25 @@
 							</a>
 							<div
 								id="nav-collections__list-3"
-								class="nav-collections__list nav-collections__list--gray"
+								class="nav-collections__list nav-collections__list--gray scrollbar-hide"
 							>
-								<div class="container flex gap-1 mx-auto">
+								<div class="nav-collections__list__inner">
+									<button
+										class="nav__link nav-collections__closer nav__mobile-only mb-2"
+										type="button"
+									>
+										<div
+											class="flex gap-half align-items-center"
+										>
+											<div class="nav__link__icon">
+												<img
+													src="/img/icons/chev-left-white.svg"
+													alt=""
+												/>
+											</div>
+											<div>Close</div>
+										</div>
+									</button>
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
@@ -718,9 +804,25 @@
 							</a>
 							<div
 								id="nav-collections__list-4"
-								class="nav-collections__list nav-collections__list--black"
+								class="nav-collections__list nav-collections__list--black scrollbar-hide"
 							>
-								<div class="container flex gap-1half mx-auto">
+								<div class="nav-collections__list__inner">
+									<button
+										class="nav__link nav-collections__closer nav__mobile-only mb-2"
+										type="button"
+									>
+										<div
+											class="flex gap-half align-items-center"
+										>
+											<div class="nav__link__icon">
+												<img
+													src="/img/icons/chev-left-white.svg"
+													alt=""
+												/>
+											</div>
+											<div>Close</div>
+										</div>
+									</button>
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
@@ -825,9 +927,25 @@
 							</a>
 							<div
 								id="nav-collections__list-5"
-								class="nav-collections__list nav-collections__list--darkgray"
+								class="nav-collections__list nav-collections__list--darkgray scrollbar-hide"
 							>
-								<div class="container flex gap-1half mx-auto">
+								<div class="nav-collections__list__inner">
+									<button
+										class="nav__link nav-collections__closer nav__mobile-only mb-2"
+										type="button"
+									>
+										<div
+											class="flex gap-half align-items-center"
+										>
+											<div class="nav__link__icon">
+												<img
+													src="/img/icons/chev-left-white.svg"
+													alt=""
+												/>
+											</div>
+											<div>Close</div>
+										</div>
+									</button>
 									<dl class="nav-collections__list__sublist">
 										<dt>
 											<a
