@@ -54,10 +54,12 @@
 	}
 
 	&__link-list {
-		display: flex;
-		align-items: center;
-		gap: 1.5rem;
-		box-sizing: border-box;
+		&__main {
+			display: flex;
+			align-items: center;
+			gap: 1.5rem;
+			box-sizing: border-box;
+		}
 
 		&-container {
 			transform: translateX(0);
@@ -208,6 +210,7 @@
 			padding-top: 5rem;
 			padding: 5rem 1rem;
 			pointer-events: auto;
+			transform: translateX(0);
 			z-index: -1;
 
 			&__inner {

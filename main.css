@@ -1617,7 +1617,7 @@ table {
   background-color: #161616;
   transition: padding 0.3s ease;
 }
-.nav__link-list {
+.nav__link-list__main {
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -1746,6 +1746,7 @@ table {
   padding-top: 5rem;
   padding: 5rem 1rem;
   pointer-events: auto;
+  transform: translateX(0);
   z-index: -1;
 }
 .nav-collections__list__inner {
